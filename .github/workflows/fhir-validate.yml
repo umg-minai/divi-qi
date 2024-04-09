@@ -6,13 +6,16 @@ on:
       - main
       - master
       - staging
+      - 'v[0-9]+.[0-9]+*' # Approximates v[0-9]+.[0-9]+.* pattern
+    tags:
+      - 'v[0-9]+.[0-9]+*' # Trigger for semantic version tags (e.g., v1.2, v1.2.3)
+      - 'v[0-9]+.[0-9]+.*-*' # Additional pattern for pre-release versions (e.g., v1.2.3-snapshot)
   pull_request:
     branches:
       - main
       - master
       - staging
-
-  # Allows you to run this workflow manually from the Actions tab
+      - 'v[0-9]+.[0-9]+*' # Approximates v[0-9]+.[0-9]+.* pattern
   workflow_dispatch:
 
 env:
