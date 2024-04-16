@@ -16,7 +16,7 @@ Description: "Intensive Care Patients with Invasive Ventilation and no Home Vent
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Exclude Patients with Dependence on Home Ventilator at or before Admission to Intensive Care Unit

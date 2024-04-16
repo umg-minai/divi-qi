@@ -176,7 +176,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "sedation-rass-inrange-goal"
   * description.text = "Sedation Level should be within RASS scores of -1 to +1"
   * target[+]
-    * measure = $sct#4574410001244102 "Richmond agitation-sedation scale"
+    * measure = $sct#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
       * low = -1 '' ""
       * high = 1 '' ""

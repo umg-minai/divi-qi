@@ -65,7 +65,7 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
   * id = "assessment-sufficient-feeding-goal"
   * description.text = "The daily amount of calories should match the individual requirements."
   * target[+]
-    * measure = $sct#787787004 "Energy Intake (Syn. Calorie Intake)"
+    * measure = $sct#787787004 "Calorie Intake"
     * detailRange.low = 1 'kcal' "kcal"
     * due = 1 $ucum#d "day"
 // -> Bezug auf individuellen Bedarf: $sct#226244007 "Energy requirement (Syn. Recommended Energy Intake)"

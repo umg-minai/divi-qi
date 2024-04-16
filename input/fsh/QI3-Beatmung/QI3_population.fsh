@@ -16,7 +16,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -30,7 +30,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#3029943 "Horowitz-Index in Arterial Blood"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -57,7 +57,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -71,7 +71,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -108,7 +108,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -122,7 +122,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -159,7 +159,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -173,7 +173,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -210,7 +210,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -224,7 +224,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -261,7 +261,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -275,7 +275,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -312,7 +312,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -326,7 +326,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -363,7 +363,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
@@ -377,7 +377,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygen Index Measurement"
+      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
