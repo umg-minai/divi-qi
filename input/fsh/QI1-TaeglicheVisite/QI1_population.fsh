@@ -12,3 +12,5 @@ Description: "Intensive Care Patients"
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#133903000 "Care of Intensive Care Unit Patient"
 * characteristic[procedure][=].exclude = false
+
+//Testkommentar 
