@@ -16,33 +16,47 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation)
 
 // Define Intervention 
-* insert rs-combination-any 
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-weaning-goal"
-* action[ventilatorManagement][+]
-  * code = $sct#410210009 "Ventilator care management (procedure)"
-  * goalId[+] = "weaning-trial-goal"
+* insert rs-combination-any
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyWeaningAssessments)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyWeaningTrials)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Weaning Assessment
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-weaning-goal"
-  * description.text = "Readiness-to-wean should be assessed periodically every day."
-  * target[+]
-    * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
 
-// Define Goal for Weaning Trial
-* goal[ventilatorManagement][+]
-  * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
-  * id = "weaning-trial-goal"
-  * description.text = "Weaning trials should be performed periodically every day."
-  * target[+]
-    * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
+// Recommended Action
+Instance: dailyWeaningAssessments
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Assessments of Readiness-to-wean from mechanical ventilation"
+Description: "Readiness-to-wean from mechanical ventilation should be assessed periodically every day."
+* name = "dailyWeaningAssessments"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-assessments)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $divi-qi-s#EVAL-VENT-WEAN "Assessment of Readiness-to-wean from mechanical ventilation"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
+
+Instance: dailyWeaningTrials
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Weaning Trials"
+Description: "Weaning trials should be performed periodically every day."
+* name = "dailyWeaningTrials"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-trials)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: DischargeWithoutHomeVentilation

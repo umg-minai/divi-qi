@@ -71,7 +71,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -122,7 +122,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -173,7 +173,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -224,7 +224,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -275,7 +275,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -326,7 +326,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -377,7 +377,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#313558004 "Oxygenation Index Measurement"
+      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"

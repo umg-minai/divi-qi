@@ -17,19 +17,27 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-stop-orders-invasive-devices"
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyStopOrdersInvasiveDevices)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Stop-Orders for Invasive Devices
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-stop-orders-invasive-devices"
-  * description.text = "All invasive devices should have a daily re-evaluation regarding the necessity of each device."
-  * target[+]
-    * measure = $sct#230165009 "Indication of"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
+
+// Recommended Action
+Instance: dailyStopOrdersInvasiveDevices
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Stop-Orders for Invasive Devices"
+Description: "All invasive devices should have a daily re-evaluation regarding the necessity of each device."
+* name = "dailyStopOrdersInvasiveDevices"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#230165009 "Indication of"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: HandDisinfectantConsumption
@@ -64,6 +72,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
     * measure = $sct#311942001 "Disinfectant"
     * detailRange.low = 80 'liter' "liter"
     * due = 1000 $ucum#d "day"
+
 
 Instance: InfectionDeviceRatio
 InstanceOf: recommendation-plan 

@@ -17,41 +17,65 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-antibiotic-indication"
-  * goalId[+] = "assessment-antibiotic-focus"
-  * goalId[+] = "assessment-antibiotic-duration"
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyAssessmentAntibioticIndication)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyAssessmentAntibioticFocus)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(dailyAssessmentAntibioticDuration)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Antibiotics' Indication
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-antibiotic-indication"
-  * description.text = "Antibiotics should have a daily re-evaluation of the Indication for each Antibiotic."
-  * target[+]
-    * measure = $sct#230165009 "Indication of"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
 
-// Define Goal for Antibiotics' Focus
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-antibiotic-focus"
-  * description.text = "Antibiotics should have a daily re-evaluation of the Focus for each Antibiotic."
-  * target[+]
-    * measure = $sct#272737002 "Site of"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
+// Recommended Action
+Instance: dailyAssessmentAntibioticIndication
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Assessment of the Indication for Antibiotics"
+Description: "Antibiotics should have a daily re-evaluation of the Indication for each Antibiotic."
+* name = "dailyAssessmentAntibioticIndication"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-indication)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#230165009 "Indication of"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
-// Define Goal for Antibiotics' Duration
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-antibiotic-duration"
-  * description.text = "Antibiotics should have a daily re-evaluation of the Therapy Duration for each Antibiotic."
-  * target[+]
-    * measure = $sct#261773006 "Duration of Therapy"
-    * detailRange.low = 1 '' ""
-    * due = 1 $ucum#d "day"
+Instance: dailyAssessmentAntibioticFocus
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Assessment of the Focus for Antibiotics"
+Description: "Antibiotics should have a daily re-evaluation of the Focus for each Antibiotic."
+* name = "dailyAssessmentAntibioticFocus"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-focus)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#272737002 "Site of"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
+
+Instance: dailyAssessmentAntibioticDuration
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Daily Assessment of the Duration of Antibiotic Therapy"
+Description: "Antibiotics should have a daily re-evaluation of the Duration of Therapy for each Antibiotic."
+* name = "dailyAssessmentAntibioticDuration"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-duration)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#261773006 "Duration of Therapy"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: FrequencyBloodCultures
@@ -73,19 +97,25 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-blood-cultures-frequency"
-
-// Define Goal for the Blood-Cultures Frequency
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-blood-cultures-frequency"
-  * description.text = "The Frequency of Blood Cultures should be at least 80 per 1000 days."
-  * target[+]
-    * measure = $sct#30088009 "Blood Culture"
-    * detailRange.low = 80 '' ""
-    * due = 1000 $ucum#d "day"
+* action[other][+] 
+  * definitionCanonical = Canonical(frequentBloodCultures)
+  * code = $sct#74964007 "Other (qualifier value)"
 
 
+// Recommended Action
+Instance: frequentBloodCultures
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Frequent Blood Cultures"
+Description: "The Frequency of Blood Cultures should be at least 80 per 1000 days."
+* name = "frequentBloodCultures"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/frequent-blood-cultures)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#30088009 "Blood Culture"
+* timingTiming
+  * repeat
+    * frequency = 80
+    * period = 1000
+    * periodUnit = $ucum#d "day"
 

@@ -17,129 +17,180 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be asse
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-sedation-between-6-14-goal"
-  * goalId[+] = "assessment-analgesia-between-6-14-goal"
-  * goalId[+] = "assessment-delirium-between-6-14-goal"
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-sedation-between-14-22-goal"
-  * goalId[+] = "assessment-analgesia-between-14-22-goal"
-  * goalId[+] = "assessment-delirium-between-14-22-goal"
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-sedation-between-22-6-goal"
-  * goalId[+] = "assessment-analgesia-between-22-6-goal"
-  * goalId[+] = "assessment-delirium-between-22-6-goal"
+* action[other][+] 
+  * definitionCanonical = Canonical(sedationAssessmentEarlyShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(sedationAssessmentLateShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(sedationAssessmentNightShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(painAssessmentEarlyShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(painAssessmentLateShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(painAssessmentNightShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(deliriumAssessmentEarlyShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(deliriumAssessmentLateShift)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(deliriumAssessmentNightShift)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goals for Sedation Assessment between 6-14
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-sedation-between-6-14-goal"
-  * description.text = "Sedation should be assessed between 6-14h every day."
-  * target[+]
-    * measure = $sct#851211000000105 "Assessment of Sedation Level"
-    * detailRange
-      * low = 6 'oclock' "o'clock"
-      * high = 13.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
-    
-// Define Goal for Analgesia Assessment between 6-14
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-analgesia-between-6-14-goal"
-  * description.text = "Analgesia should be assessed between 6-14h every day."
-  * target[+]
-    * measure = $sct#370778008 "Assessment of Pain Control"
-    * detailRange
-      * low = 6 'oclock' "o'clock"
-      * high = 13.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
 
-// Define Goal for Delirium Assessment between 6-14
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-delirium-between-6-14-goal"
-  * description.text = "Delirium should be assessed between 6-14h every day."
-  * target[+]
-    * measure = $sct#733870009 "Assessment of Delirium"
-    * detailRange
-      * low = 6 'oclock' "o'clock"
-      * high = 13.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
+// Recommended Actions
+Instance: sedationAssessmentEarlyShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Sedation Assessment during Early Shift"
+Description: "Sedation should be assessed once between 6 AM and <2 PM every day."
+* name = "sedationAssessmentEarlyShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-early-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#851211000000105 "Assessment of Sedation Level"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
-// Define Goals for Sedation Assessment between 14-22
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-sedation-between-14-22-goal"
-  * description.text = "Sedation should be assessed between 14-22h every day."
-  * target[+]
-    * measure = $sct#851211000000105 "Assessment of Sedation Level"
-    * detailRange
-      * low = 14 'oclock' "o'clock"
-      * high = 21.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
-    
-// Define Goal for Analgesia Assessment between 14-22
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-analgesia-between-14-22-goal"
-  * description.text = "Analgesia should be assessed between 14-22h every day."
-  * target[+]
-    * measure = $sct#370778008 "Assessment of Pain Control"
-    * detailRange
-      * low = 14 'oclock' "o'clock"
-      * high = 21.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
+Instance: sedationAssessmentLateShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Sedation Assessment during Late Shift"
+Description: "Sedation should be assessed once between 2 AM and <10 PM every day."
+* name = "sedationAssessmentLateShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-late-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#851211000000105 "Assessment of Sedation Level"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
-// Define Goal for Delirium Assessment between 14-22
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-delirium-between-14-22-goal"
-  * description.text = "Delirium should be assessed between 14-22h every day."
-  * target[+]
-    * measure = $sct#733870009 "Assessment of Delirium"
-    * detailRange
-      * low = 14 'oclock' "o'clock"
-      * high = 21.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
+Instance: sedationAssessmentNightShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Sedation Assessment during Night Shift"
+Description: "Sedation should be assessed once between 10 PM and <6 AM every day."
+* name = "sedationAssessmentNightShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-night-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#851211000000105 "Assessment of Sedation Level"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
-// Define Goals for Sedation Assessment between 22-6
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-sedation-between-22-6-goal"
-  * description.text = "Sedation should be assessed between 22-6h every day."
-  * target[+]
-    * measure = $sct#851211000000105 "Assessment of Sedation Level"
-    * detailRange
-      * low = 22 'oclock' "o'clock"
-      * high = 5.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
-    
-// Define Goal for Analgesia Assessment between 22-6
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-analgesia-between-22-6-goal"
-  * description.text = "Analgesia should be assessed between 22-6h every day."
-  * target[+]
-    * measure = $sct#370778008 "Assessment of Pain Control"
-    * detailRange
-      * low = 22 'oclock' "o'clock"
-      * high = 5.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
+Instance: painAssessmentEarlyShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Pain Assessment during Early Shift"
+Description: "Pain should be assessed once between 6 AM and <2 PM every day."
+* name = "painAssessmentEarlyShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-early-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#370778008 "Assessment of Pain Control"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
-// Define Goal for Delirium Assessment between 22-6
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-delirium-between-22-6-goal"
-  * description.text = "Delirium should be assessed between 22-6h every day."
-  * target[+]
-    * measure = $sct#733870009 "Assessment of Delirium"
-    * detailRange
-      * low = 22 'oclock' "o'clock"
-      * high = 5.999999999 'oclock' "o'clock"
-    * detailCodeableConcept = $sct#28017001 "Daytime"
+Instance: painAssessmentLateShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Pain Assessment during Late Shift"
+Description: "Pain should be assessed once between 2 AM and <10 PM every day."
+* name = "painAssessmentLateShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-late-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#370778008 "Assessment of Pain Control"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
+
+Instance: painAssessmentNightShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Pain Assessment during Night Shift"
+Description: "Pain should be assessed once between 10 PM and <6 AM every day."
+* name = "painAssessmentNightShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-night-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#370778008 "Assessment of Pain Control"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
+
+Instance: deliriumAssessmentEarlyShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Delirium Assessment during Early Shift"
+Description: "Delirium should be assessed once between 6 AM and <2 PM every day."
+* name = "deliriumAssessmentEarlyShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-early-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#733870009 "Assessment of Delirium"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
+
+Instance: deliriumAssessmentLateShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Delirium Assessment during Late Shift"
+Description: "Delirium should be assessed once between 2 AM and <10 PM every day."
+* name = "deliriumAssessmentLateShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-late-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#733870009 "Assessment of Delirium"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
+
+Instance: deliriumAssessmentNightShift
+InstanceOf: body-positioning-action
+Usage: #definition
+Title: "Delirium Assessment during Night Shift"
+Description: "Delirium should be assessed once between 10 PM and <6 AM every day."
+* name = "deliriumAssessmentNightShift"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-night-shift)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#733870009 "Assessment of Delirium"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
+
 
 
 Instance: SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges
