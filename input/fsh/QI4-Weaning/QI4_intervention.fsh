@@ -31,7 +31,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
   * description.text = "Readiness-to-wean should be assessed periodically every day."
   * target[+]
     * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 // Define Goal for Weaning Trial
@@ -41,7 +41,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
   * description.text = "Weaning trials should be performed periodically every day."
   * target[+]
     * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 
@@ -75,7 +75,7 @@ Description: "The fraction of patients discharged with dependence on home ventil
   * id = "no-discharge-with-home-ventilation"
   * description.text = "The fraction of patients discharged with dependence on home ventilation should be low."
   * target[+]
-    * measure = $sct#60631000119109 "Dependence on home ventilation"
+    * measure = $sct#60631000119109 "Dependence on home ventilator"
     * detailRange.low = 0 'occurrence' "occurrence"
     * detailCodeableConcept = $sct#306568008 "Discharge from intensive care service"
 

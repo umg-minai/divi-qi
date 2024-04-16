@@ -32,7 +32,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
   * target[+]
     * measure = $sct#1236923003 "Participation in multidisciplinary ward round"
     * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'd' "d"
+    * due = 1 'day' "day"
 
 // Define Goal for participation of ICU specialist
 * goal[assessmentScale][+]
@@ -42,7 +42,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
   * target[+]
     * measure = $divi-qi-s#FA-ZB-ITS "Participation of ICU specialist in multidisciplinary ward round"
     * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'd' "d"
+    * due = 1 'day' "day"
 
 
 Instance: DailyDocumentationTreatmentGoals

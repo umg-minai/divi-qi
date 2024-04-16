@@ -46,8 +46,8 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#60621009 "Body Mass Index"
     * valueRange
-      * low = 0 'mmHg' "mmHg"
-      * high = 29.999999999 'mmHg' "mmHg"
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 29.999999999 'mm[Hg]' "mm[Hg]"
 * characteristic[condition][=].exclude = false
 
 // Exclude Patients with Contraindication of Enteral Feeding 

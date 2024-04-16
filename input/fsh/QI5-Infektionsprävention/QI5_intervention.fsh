@@ -28,7 +28,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
   * description.text = "All invasive devices should have a daily re-evaluation regarding the necessity of each device."
   * target[+]
     * measure = $sct#230165009 "Indication of"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 
@@ -62,8 +62,8 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * description.text = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
-    * detailRange.low = 80 'litres' "litres"
-    * due = 1000 'days' "days"
+    * detailRange.low = 80 'liter' "liter"
+    * due = 1000 'day' "day"
 
 
 Instance: InfectionDeviceRatio
@@ -96,7 +96,7 @@ Description: "The number of infections per invasive devices should be low."
   * description.text = "The number of infections per invasive devices should be low."
   * target[+]
     * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection"
-    * detailRange.low = 0 'occurrence' "occurrence"
+    * detailRange.low = 0 '' ""
     * due = 1 'day' "day"
 
 
@@ -130,7 +130,7 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * description.text = "The number of pneumonia cases per ventilated patients should be low."
   * target[+]
     * measure = $sct#429271009 "Ventilator associated pneumonia"
-    * detailRange.low = 0 'occurrence' "occurrence"
+    * detailRange.low = 0 '' ""
     * due = 1 'day' "day"
 
 

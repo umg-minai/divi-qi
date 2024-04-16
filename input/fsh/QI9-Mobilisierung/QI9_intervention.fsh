@@ -28,7 +28,7 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
   * description.text = "Mobilized should be performed within 24 hours after admission to ICU."
   * target[+]
     * measure = $sct#74923002 "Mobilization"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"

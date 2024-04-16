@@ -30,7 +30,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * description.text = "Antibiotics should have a daily re-evaluation of the Indication for each Antibiotic."
   * target[+]
     * measure = $sct#230165009 "Indication of"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 // Define Goal for Antibiotics' Focus
@@ -40,7 +40,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * description.text = "Antibiotics should have a daily re-evaluation of the Focus for each Antibiotic."
   * target[+]
     * measure = $sct#272737002 "Site of"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 // Define Goal for Antibiotics' Duration
@@ -50,7 +50,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * description.text = "Antibiotics should have a daily re-evaluation of the Therapy Duration for each Antibiotic."
   * target[+]
     * measure = $sct#261773006 "Duration of Therapy"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 1 'day' "day"
 
 

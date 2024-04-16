@@ -28,7 +28,7 @@ Description: "For all Intensive Care Patients, an initial structured communicati
   * description.text = "An initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care."
   * target[+]
     * measure = $sct#225330006 "Client Participation"
-    * detailRange.low = 1 'occurrence' "occurrence"
+    * detailRange.low = 1 '' ""
     * due = 3 'day' "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
@@ -66,5 +66,5 @@ Description: "For all Intensive Care Patients, at least one structured communica
   * description.text = "At least one structured communication with the Patients and/or their Relatives should take place every week."
   * target[+]
     * measure = $sct#225330006 "Client Participation"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 7 'days' "days"
+    * detailRange.low = 1 '' ""
+    * due = 7 'day' "day"
