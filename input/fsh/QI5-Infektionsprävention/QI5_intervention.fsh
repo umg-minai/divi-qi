@@ -29,7 +29,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
   * target[+]
     * measure = $sct#230165009 "Indication of"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 
 Instance: HandDisinfectantConsumption
@@ -63,8 +63,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
     * detailRange.low = 80 'liter' "liter"
-    * due = 1000 'day' "day"
-
+    * due = 1000 $ucum#d "day"
 
 Instance: InfectionDeviceRatio
 InstanceOf: recommendation-plan 
@@ -97,7 +96,7 @@ Description: "The number of infections per invasive devices should be low."
   * target[+]
     * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection"
     * detailRange.low = 0 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 
 Instance: PenumoniaVentilatedPatientRatio
@@ -131,6 +130,6 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * target[+]
     * measure = $sct#429271009 "Ventilator associated pneumonia"
     * detailRange.low = 0 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 

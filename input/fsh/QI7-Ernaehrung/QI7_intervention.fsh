@@ -29,7 +29,7 @@ Description: "All Intensive Care Patients for which a sufficient oral nutrition 
   * target[+]
     * measure = $sct#229912004 "Enteral Feeding"
     * detailRange.low = 1 'kcal' "kcal"
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -67,5 +67,5 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
   * target[+]
     * measure = $sct#787787004 "Energy Intake (Syn. Calorie Intake)"
     * detailRange.low = 1 'kcal' "kcal"
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 // -> Bezug auf individuellen Bedarf: $sct#226244007 "Energy requirement (Syn. Recommended Energy Intake)"

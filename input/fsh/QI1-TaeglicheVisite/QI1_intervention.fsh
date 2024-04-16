@@ -31,8 +31,8 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
   * description.text = "Ward Rounds should be performed at least once every day."
   * target[+]
     * measure = $sct#1236923003 "Participation in multidisciplinary ward round"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 1 '' ""
+    * due = 1 $ucum#d "day"
 
 // Define Goal for participation of ICU specialist
 * goal[assessmentScale][+]
@@ -41,8 +41,8 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
   * description.text = "Ward Rounds should include at least one physician with ICU specialist certification."
   * target[+]
     * measure = $divi-qi-s#FA-ZB-ITS "Participation of ICU specialist in multidisciplinary ward round"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 1 '' ""
+    * due = 1 $ucum#d "day"
 
 
 Instance: DailyDocumentationTreatmentGoals
@@ -75,6 +75,6 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
   * description.text = "Treatment Goals should be documented at least once every day."
   * target[+]
     * measure = $divi-qi-s#TAGESZIEL "Setting health objective"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 1 '' ""
+    * due = 1 $ucum#d "day"
 

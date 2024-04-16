@@ -31,7 +31,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * target[+]
     * measure = $sct#230165009 "Indication of"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 // Define Goal for Antibiotics' Focus
 * goal[assessmentScale][+]
@@ -41,7 +41,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * target[+]
     * measure = $sct#272737002 "Site of"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 // Define Goal for Antibiotics' Duration
 * goal[assessmentScale][+]
@@ -51,7 +51,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
   * target[+]
     * measure = $sct#261773006 "Duration of Therapy"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 
 Instance: FrequencyBloodCultures
@@ -85,7 +85,7 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
   * target[+]
     * measure = $sct#30088009 "Blood Culture"
     * detailRange.low = 80 '' ""
-    * due = 1000 'day' "day"
+    * due = 1000 $ucum#d "day"
 
 
 

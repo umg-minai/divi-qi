@@ -32,7 +32,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
   * target[+]
     * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 // Define Goal for Weaning Trial
 * goal[ventilatorManagement][+]
@@ -42,7 +42,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
   * target[+]
     * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 
 
 Instance: DischargeWithoutHomeVentilation
@@ -76,6 +76,6 @@ Description: "The fraction of patients discharged with dependence on home ventil
   * description.text = "The fraction of patients discharged with dependence on home ventilation should be low."
   * target[+]
     * measure = $sct#60631000119109 "Dependence on home ventilator"
-    * detailRange.low = 0 'occurrence' "occurrence"
+    * detailRange.low = 0 '' ""
     * detailCodeableConcept = $sct#306568008 "Discharge from intensive care service"
 

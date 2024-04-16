@@ -29,7 +29,7 @@ Description: "For all Intensive Care Patients, an initial structured communicati
   * target[+]
     * measure = $sct#225330006 "Client Participation"
     * detailRange.low = 1 '' ""
-    * due = 3 'day' "day"
+    * due = 3 $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -67,4 +67,4 @@ Description: "For all Intensive Care Patients, at least one structured communica
   * target[+]
     * measure = $sct#225330006 "Client Participation"
     * detailRange.low = 1 '' ""
-    * due = 7 'day' "day"
+    * due = 7 $ucum#d "day"

@@ -29,7 +29,7 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
   * target[+]
     * measure = $sct#74923002 "Mobilization"
     * detailRange.low = 1 '' ""
-    * due = 1 'day' "day"
+    * due = 1 $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -66,6 +66,6 @@ Description: "All Intensive Care Patients that don't have a no-mobilization orde
   * description.text = "Mobilization should be performed at least once every day."
   * target[+]
     * measure = $sct#74923002 "Mobilization"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 1 '' ""
+    * due = 1 $ucum#d "day"
 

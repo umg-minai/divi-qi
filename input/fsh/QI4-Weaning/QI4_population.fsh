@@ -26,5 +26,5 @@ Description: "Intensive Care Patients with Invasive Ventilation and no Home Vent
   * timeFromEvent
     * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
     * range
-      * high = 0 'day' "day"
+      * high = 0 $ucum#d "day"
 * characteristic[condition][=].exclude = true
