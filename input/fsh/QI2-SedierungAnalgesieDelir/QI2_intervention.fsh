@@ -48,7 +48,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be asse
 
 // Recommended Actions
 Instance: sedationAssessmentEarlyShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Early Shift"
 Description: "Sedation should be assessed once between 6 AM and <2 PM every day."
@@ -64,7 +64,7 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
 Instance: sedationAssessmentLateShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Late Shift"
 Description: "Sedation should be assessed once between 2 AM and <10 PM every day."
@@ -80,7 +80,7 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: sedationAssessmentNightShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Night Shift"
 Description: "Sedation should be assessed once between 10 PM and <6 AM every day."
@@ -96,7 +96,7 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
 Instance: painAssessmentEarlyShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Early Shift"
 Description: "Pain should be assessed once between 6 AM and <2 PM every day."
@@ -112,7 +112,7 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
 Instance: painAssessmentLateShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Late Shift"
 Description: "Pain should be assessed once between 2 AM and <10 PM every day."
@@ -128,7 +128,7 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: painAssessmentNightShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Night Shift"
 Description: "Pain should be assessed once between 10 PM and <6 AM every day."
@@ -144,7 +144,7 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
 Instance: deliriumAssessmentEarlyShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Early Shift"
 Description: "Delirium should be assessed once between 6 AM and <2 PM every day."
@@ -160,7 +160,7 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
 Instance: deliriumAssessmentLateShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Late Shift"
 Description: "Delirium should be assessed once between 2 AM and <10 PM every day."
@@ -176,7 +176,7 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: deliriumAssessmentNightShift
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Night Shift"
 Description: "Delirium should be assessed once between 10 PM and <6 AM every day."

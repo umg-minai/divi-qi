@@ -16,6 +16,6 @@ Description: "Intensive Care Patients without a no-mobilization order"
 // Include only Patients that don't have a no-mobilization order
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#183074009 "Recommendation to rest in bed"
+    * valueCodeableConcept = $divi-qi-s#ORDER-NO-MOBIL "Order to not mobilize"
 * characteristic[procedure][=].exclude = true
 

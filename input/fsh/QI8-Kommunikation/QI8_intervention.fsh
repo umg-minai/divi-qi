@@ -17,23 +17,32 @@ Description: "For all Intensive Care Patients, an initial structured communicati
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-inital-communication-patients-relatives"
+* action[other][+] 
+  * definitionCanonical = Canonical(firstCommunicationPatientsRelativesWithin72hours)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Inital Communication with Patients and Relatives
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-inital-communication-patients-relatives"
-  * description.text = "An initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care."
-  * target[+]
-    * measure = $sct#225330006 "Client Participation"
-    * detailRange.low = 1 '' ""
-    * due = 3 $ucum#d "day"
+
+// Recommended Action
+Instance: firstCommunicationPatientsRelativesWithin72hours
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "First Communication with Patients and/or their Relatives within 72 hours"
+Description: "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."
+* name = "firstCommunicationPatientsRelativesWithin72hours"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/first-communication-patients-relatives-within-24hours)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#225330006 "Client Participation"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 7
+    * periodUnit = $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
         * high = 72 'hours' "hours" */
+
 
 
 Instance: PeriodicCommunicationPatientsRelatives
@@ -55,16 +64,24 @@ Description: "For all Intensive Care Patients, at least one structured communica
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-periodic-communication-patients-relatives"
+* action[other][+] 
+  * definitionCanonical = Canonical(weeklyCommunicationPatientsRelatives)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Periodic Communication with Patients and Relatives
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-periodic-communication-patients-relatives"
-  * description.text = "At least one structured communication with the Patients and/or their Relatives should take place every week."
-  * target[+]
-    * measure = $sct#225330006 "Client Participation"
-    * detailRange.low = 1 '' ""
-    * due = 7 $ucum#d "day"
+
+// Recommended Action
+Instance: weeklyCommunicationPatientsRelatives
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Weekly Communication with Patients and Relatives"
+Description: "At least one structured communication with the Patients and/or their Relatives takes place every week."
+* name = "weeklyCommunicationPatientsRelatives"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/weekly-communication-patients-relatives)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#225330006 "Client Participation"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 7
+    * periodUnit = $ucum#d "day"

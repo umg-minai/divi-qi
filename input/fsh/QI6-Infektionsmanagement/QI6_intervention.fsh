@@ -30,10 +30,10 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 // Recommended Action
 Instance: dailyAssessmentAntibioticIndication
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
-Description: "Antibiotics should have a daily re-evaluation of the Indication for each Antibiotic."
+Description: "All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."
 * name = "dailyAssessmentAntibioticIndication"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-indication)
 * insert publisher-experimental-version(7.0)
@@ -46,10 +46,10 @@ Description: "Antibiotics should have a daily re-evaluation of the Indication fo
     * periodUnit = $ucum#d "day"
 
 Instance: dailyAssessmentAntibioticFocus
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Focus for Antibiotics"
-Description: "Antibiotics should have a daily re-evaluation of the Focus for each Antibiotic."
+Description: "All Antibiotics are daily re-evaluated for the Focus for each Antibiotic."
 * name = "dailyAssessmentAntibioticFocus"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-focus)
 * insert publisher-experimental-version(7.0)
@@ -62,10 +62,10 @@ Description: "Antibiotics should have a daily re-evaluation of the Focus for eac
     * periodUnit = $ucum#d "day"
 
 Instance: dailyAssessmentAntibioticDuration
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Duration of Antibiotic Therapy"
-Description: "Antibiotics should have a daily re-evaluation of the Duration of Therapy for each Antibiotic."
+Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic."
 * name = "dailyAssessmentAntibioticDuration"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-duration)
 * insert publisher-experimental-version(7.0)
@@ -104,10 +104,10 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
 
 // Recommended Action
 Instance: frequentBloodCultures
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Frequent Blood Cultures"
-Description: "The Frequency of Blood Cultures should be at least 80 per 1000 days."
+Description: "The Frequency of Blood Cultures is at least 80 per 1000 days."
 * name = "frequentBloodCultures"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/frequent-blood-cultures)
 * insert publisher-experimental-version(7.0)

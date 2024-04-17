@@ -24,10 +24,10 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 
 // Recommended Action
 Instance: dailyStopOrdersInvasiveDevices
-InstanceOf: body-positioning-action
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Stop-Orders for Invasive Devices"
-Description: "All invasive devices should have a daily re-evaluation regarding the necessity of each device."
+Description: "All invasive devices have a daily re-evaluation regarding the necessity of each device."
 * name = "dailyStopOrdersInvasiveDevices"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
 * insert publisher-experimental-version(7.0)
@@ -67,7 +67,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "assessment-hand-disinfectant-consumption"
-  * description.text = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
+  * description.text = "The consumption of hand disinfectant is more than 80 litres per 1000 days."
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
     * detailRange.low = 80 'liter' "liter"
@@ -78,7 +78,7 @@ Instance: InfectionDeviceRatio
 InstanceOf: recommendation-plan 
 Usage: #definition
 Title: "Infection-per-Device Ratio"
-Description: "The number of infections per invasive devices should be low."
+Description: "The number of infections per invasive devices is at zero."
 * insert canonical-url(DIVI-DigiQIs, intervention/infection-device-ratio)
 * status = #active
 * name = "Intervention_Infection_Device_Ratio"
@@ -101,7 +101,7 @@ Description: "The number of infections per invasive devices should be low."
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "assessment-infection-device-ratio"
-  * description.text = "The number of infections per invasive devices should be low."
+  * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
     * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection"
     * detailRange.low = 0 '' ""
@@ -135,7 +135,7 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "assessment-pneumonia-ventilated-patients-ratio"
-  * description.text = "The number of pneumonia cases per ventilated patients should be low."
+  * description.text = "The number of pneumonia cases per ventilated patients is at zero."
   * target[+]
     * measure = $sct#429271009 "Ventilator associated pneumonia"
     * detailRange.low = 0 '' ""
