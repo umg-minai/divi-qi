@@ -44,7 +44,7 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 // Include only Patients that don't have Adipositas 
 * characteristic[ventilationObservableSCT][+]
   * definitionByTypeAndValue
-    * type = $sct#4245997 "Body Mass Index"
+    * type = $sct#60621009 "Body Mass Index"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 29.999999999 'mm[Hg]' "mm[Hg]"
