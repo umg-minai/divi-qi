@@ -17,19 +17,27 @@ Description: "All Intensive Care Patients for which a sufficient oral nutrition 
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-early-feeding-goal"
+* action[other][+] 
+  * definitionCanonical = Canonical(FirstEnteralFeedingWithin24hours)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Early Feeding
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-early-feeding-goal"
-  * description.text = "Enteral Feeding should be commenced within 24 hours after admission to Intensive Care."
-  * target[+]
-    * measure = $sct#229912004 "Enteral Feeding"
-    * detailRange.low = 1 'kcal' "kcal"
-    * due = 1 'day' "day"
+
+// Recommended Action
+Instance: FirstEnteralFeedingWithin24hours
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "First Enteral Feeding Within 24 hours"
+Description: "First Enteral Feeding occurs within 24 hours after Admission to Intensive Care."
+* name = "FirstEnteralFeedingWithin24hours"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/first-enteral-feeding-within-24hours)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#229912004 "Enteral Feeding"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -55,17 +63,24 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-sufficient-feeding-goal"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailySufficientFeeding)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Sufficient Feeding
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-sufficient-feeding-goal"
-  * description.text = "The daily amount of calories should match the individual requirements."
-  * target[+]
-    * measure = $sct#787787004 "Energy Intake (Syn. Calorie Intake)"
-    * detailRange.low = 1 'kcal' "kcal"
-    * due = 1 'day' "day"
-// -> Bezug auf individuellen Bedarf: $sct#226244007 "Energy requirement (Syn. Recommended Energy Intake)"
+
+// Recommended Action
+Instance: DailySufficientFeeding
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "The daily calorie intake is sufficient"
+Description: "The daily amount of calories matches the individual requirements."
+* name = "DailySufficientFeeding"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-sufficient-feeding)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"

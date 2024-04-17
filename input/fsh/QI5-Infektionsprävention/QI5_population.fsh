@@ -14,10 +14,10 @@ Description: "Intensive Care Patients with at least one invasive device"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that have at least one invasive device 
-* characteristic[procedure][+]
+* characteristic[device][+]
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#19923001 "Catheter"
-* characteristic[procedure][=].exclude = false
+* characteristic[device][=].exclude = false
 
 
 Instance: IntensiveCarePatients-InvasiveVentilation
@@ -38,6 +38,6 @@ Description: "Intensive Care Patients with Invasive Ventilation"
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 

@@ -12,7 +12,7 @@ Description: "Intensive Care Patients with Intensive Care Treatment Longer Than 
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#133903000 "Care of Intensive Care Unit Patient"
   * durationRange
-    * low = 72.000000001 'hours' "hours"
+    * low = 72.000000001 $ucum#h "hour"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that were admitted to ICU more than three days ago
@@ -22,6 +22,6 @@ Description: "Intensive Care Patients with Intensive Care Treatment Longer Than 
   * timeFromEvent
     * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
     * range 
-      * low = 72.000000001 'hours' "hours"
+      * low = 72.000000001 $ucum#h "hour"
 * characteristic[procedure][=].exclude = false
 

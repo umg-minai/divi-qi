@@ -2,7 +2,7 @@ Instance: DailyMultiprofessionalWardRounds
 InstanceOf: recommendation-plan 
 Usage: #definition
 Title: "Daily multiprofessional ward rounds"
-Description: "Every Intensive Care Patient should be visited daily in multiprofessional ward rounds."
+Description: "Every Intensive Care Patient should be visited daily in multiprofessional ward rounds led by an intensive care specialist."
 * insert canonical-url(DIVI-DigiQIs, intervention/daily-ward-rounds)
 * status = #active
 * name = "Intervention_DailyWardRounds"
@@ -17,32 +17,27 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "multiprofessional-wardrounds-goal"
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "multiprofessional-wardrounds-include-icu-specialist-goal"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyMultiprofessionalWardRoundsAction)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Multiprofessional Ward Rounds occurrence
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "multiprofessional-wardrounds-goal"
-  * description.text = "Ward Rounds should be performed at least once every day."
-  * target[+]
-    * measure = $sct#1236923003 "Participation in multidisciplinary ward round"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'd' "d"
-
-// Define Goal for participation of ICU specialist
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "multiprofessional-wardrounds-include-icu-specialist-goal"
-  * description.text = "Ward Rounds should include at least one physician with ICU specialist certification."
-  * target[+]
-    * measure = $divi-qi-s#FA-ZB-ITS "Participation of ICU specialist in multidisciplinary ward round"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'd' "d"
+// Recommended Action
+Instance: DailyMultiprofessionalWardRoundsAction
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily multiprofessional ward rounds"
+Description: "Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist."
+* name = "DailyMultiprofessionalWardRoundsAction"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-ward-rounds)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $divi-qi-s#VISITE-FA-ZB-ITS "Multidisciplinary ward round led by an intensive care specialist"
+//* code = $sct#1236923003 "Participation in multidisciplinary ward round"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: DailyDocumentationTreatmentGoals
@@ -64,17 +59,24 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "daily-treatment-goals-goal"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyTreatmentGoals)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Documentation of Treatment Goals
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "daily-treatment-goals-goal"
-  * description.text = "Treatment Goals should be documented at least once every day."
-  * target[+]
-    * measure = $divi-qi-s#TAGESZIEL "Setting health objective"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
 
+// Recommended Action
+Instance: DailyTreatmentGoals
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily Treatment Goals"
+Description: "Daily Treatment Goals are set at least once every day."
+* name = "DailyTreatmentGoals"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-treatment-goals)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $divi-qi-s#TAGESZIEL "Setting daily treatment goals"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"

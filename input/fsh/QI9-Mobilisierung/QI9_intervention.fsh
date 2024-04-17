@@ -17,19 +17,27 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-inital-mobilization"
+* action[other][+] 
+  * definitionCanonical = Canonical(FirstMobilizationWithin24hours)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Initial Mobilization
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-inital-mobilization"
-  * description.text = "Mobilized should be performed within 24 hours after admission to ICU."
-  * target[+]
-    * measure = $sct#74923002 "Mobilization"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+
+// Recommended Action
+Instance: FirstMobilizationWithin24hours
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "First Mobilization within 24 hours"
+Description: "First Mobilization occurs within 24 hours after Admission to Intensive Care."
+* name = "FirstMobilizationWithin24hours"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/first-mobilization-within-24hours)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#74923002 "Mobilization"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -55,17 +63,24 @@ Description: "All Intensive Care Patients that don't have a no-mobilization orde
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-periodic-mobilization"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyMobilization)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Periodic Mobilization
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-periodic-mobilization"
-  * description.text = "Mobilization should be performed at least once every day."
-  * target[+]
-    * measure = $sct#74923002 "Mobilization"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
 
+// Recommended Action
+Instance: DailyMobilization
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily Mobilization"
+Description: "Mobilization that occurs at least once a day."
+* name = "DailyMobilization"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-mobilization)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#74923002 "Mobilization"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"

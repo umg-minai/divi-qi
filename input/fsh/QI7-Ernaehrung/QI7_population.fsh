@@ -14,10 +14,10 @@ Description: "Intensive Care Patients with Predicted Insufficient Energy Intake"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Predicted Insufficient Energy Intake 
-* characteristic[procedure][+]
+* characteristic[condition][+]
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#440331000124103 "Predicted Inadequate Energy Intake"
-* characteristic[procedure][=].exclude = false
+* characteristic[condition][=].exclude = false
 
 
 Instance: IntensiveCarePatients-ClinicallyFed-NoAdipositas
@@ -42,17 +42,17 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that don't have Adipositas 
-* characteristic[condition][+]
+* characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#60621009 "Body Mass Index"
+    * type = $loinc#39156-5 "Body Mass Index (BMI) [Ratio]" 
     * valueRange
-      * low = 0 'mmHg' "mmHg"
-      * high = 29.999999999 'mmHg' "mmHg"
-* characteristic[condition][=].exclude = false
+      * low = 0 'kg/m2' "kg/m2"
+      * high = 29.999999999 'kg/m2' "kg/m2"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
-// Exclude Patients with Contraindication of Enteral Feeding 
-* characteristic[condition][+]
+// Exclude Patients with a Contraindication of Enteral Feeding 
+* characteristic[3]
   * definitionByTypeAndValue
-    * offset = $sct#103306004 "Contraindication to"
+    * type = $sct#103306004 "Contraindication to"
     * valueCodeableConcept = $sct#229912004 "Enteral Feeding"
-* characteristic[condition][=].exclude = true
+* characteristic[3].exclude = true

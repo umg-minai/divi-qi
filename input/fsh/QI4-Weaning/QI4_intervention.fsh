@@ -16,33 +16,47 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation)
 
 // Define Intervention 
-* insert rs-combination-any 
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-weaning-goal"
-* action[ventilatorManagement][+]
-  * code = $sct#410210009 "Ventilator care management (procedure)"
-  * goalId[+] = "weaning-trial-goal"
+* insert rs-combination-any
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyWeaningAssessments)
+  * code = $sct#74964007 "Other (qualifier value)"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyWeaningTrials)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Weaning Assessment
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-weaning-goal"
-  * description.text = "Readiness-to-wean should be assessed periodically every day."
-  * target[+]
-    * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
 
-// Define Goal for Weaning Trial
-* goal[ventilatorManagement][+]
-  * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
-  * id = "weaning-trial-goal"
-  * description.text = "Weaning trials should be performed periodically every day."
-  * target[+]
-    * measure = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+// Recommended Action
+Instance: DailyWeaningAssessments
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily Assessments of Readiness-to-wean from mechanical ventilation"
+Description: "Readiness-to-wean from mechanical ventilation is assessed periodically every day."
+* name = "DailyWeaningAssessments"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-assessments)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $divi-qi-s#EVAL-VENT-WEAN "Assessment of Readiness-to-wean from mechanical ventilation"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
+
+Instance: DailyWeaningTrials
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily Weaning Trials"
+Description: "Weaning trials are performed periodically every day."
+* name = "DailyWeaningTrials"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-trials)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: DischargeWithoutHomeVentilation
@@ -64,18 +78,23 @@ Description: "The fraction of patients discharged with dependence on home ventil
 
 // Define Intervention 
 * insert rs-combination-all
-//  * doNotPerform = true 
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "no-discharge-with-home-ventilation"
+* action[other][+] 
+  * definitionCanonical = Canonical(NoDischargeWithHomeVentilation)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for No Discharge to Longterm-Ventilation Facility
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "no-discharge-with-home-ventilation"
-  * description.text = "The fraction of patients discharged with dependence on home ventilation should be low."
-  * target[+]
-    * measure = $sct#60631000119109 "Dependence on home ventilation"
-    * detailRange.low = 0 'occurrence' "occurrence"
-    * detailCodeableConcept = $sct#306568008 "Discharge from intensive care service"
-
+// Recommended Action
+Instance: NoDischargeWithHomeVentilation
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "No Discharge with Home Ventilation"
+Description: "The patient is not discharged with home ventilation."
+* name = "NoDischargeWithHomeVentilation"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/no-discharge-with-home-ventilation)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#60631000119109 "Dependence on home ventilator" //Zum Zeitpunkt: $sct#306568008 "Discharge from intensive care service"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"

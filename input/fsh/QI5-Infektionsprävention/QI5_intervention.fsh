@@ -17,19 +17,27 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "assessment-stop-orders-invasive-devices"
+* action[other][+] 
+  * definitionCanonical = Canonical(DailyStopOrdersInvasiveDevices)
+  * code = $sct#74964007 "Other (qualifier value)"
 
-// Define Goal for Stop-Orders for Invasive Devices
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "assessment-stop-orders-invasive-devices"
-  * description.text = "All invasive devices should have a daily re-evaluation regarding the necessity of each device."
-  * target[+]
-    * measure = $sct#230165009 "Indication of"
-    * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+
+// Recommended Action
+Instance: DailyStopOrdersInvasiveDevices
+InstanceOf: ActivityDefinition
+Usage: #definition
+Title: "Daily Stop-Orders for Invasive Devices"
+Description: "All invasive devices have a daily re-evaluation regarding the necessity of each device."
+* name = "DailyStopOrdersInvasiveDevices"
+* insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
+* insert publisher-experimental-version(7.0)
+* status = #active
+* code = $sct#230165009 "Indication of"
+* timingTiming
+  * repeat
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
 
 
 Instance: HandDisinfectantConsumption
@@ -56,21 +64,21 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * goalId[+] = "assessment-hand-disinfectant-consumption"
 
 // Define Goal for the Hand-Disinfectant Consumption
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-hand-disinfectant-consumption"
-  * description.text = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
+  * description.text = "The consumption of hand disinfectant is more than 80 litres per 1000 days."
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
-    * detailRange.low = 80 'litres' "litres"
-    * due = 1000 'days' "days"
+    * detailRange.low = 80 $ucum#L "liter"
+    * due = 1000 $ucum#d "day"
 
 
 Instance: InfectionDeviceRatio
 InstanceOf: recommendation-plan 
 Usage: #definition
 Title: "Infection-per-Device Ratio"
-Description: "The number of infections per invasive devices should be low."
+Description: "The number of infections per invasive devices is at zero."
 * insert canonical-url(DIVI-DigiQIs, intervention/infection-device-ratio)
 * status = #active
 * name = "Intervention_Infection_Device_Ratio"
@@ -90,14 +98,14 @@ Description: "The number of infections per invasive devices should be low."
   * goalId[+] = "assessment-infection-device-ratio"
 
 // Define Goal for the Infection-per-Device Ratio
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-infection-device-ratio"
-  * description.text = "The number of infections per invasive devices should be low."
+  * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
     * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection"
-    * detailRange.low = 0 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 0 '' ""
+    * due = 1 $ucum#d "day"
 
 
 Instance: PenumoniaVentilatedPatientRatio
@@ -124,13 +132,13 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * goalId[+] = "assessment-pneumonia-ventilated-patients-ratio"
 
 // Define Goal for the Pneumonia-Ventilated-Patients-Ratio
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-pneumonia-ventilated-patients-ratio"
-  * description.text = "The number of pneumonia cases per ventilated patients should be low."
+  * description.text = "The number of pneumonia cases per ventilated patients is at zero."
   * target[+]
     * measure = $sct#429271009 "Ventilator associated pneumonia"
-    * detailRange.low = 0 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * detailRange.low = 0 '' ""
+    * due = 1 $ucum#d "day"
 
 
