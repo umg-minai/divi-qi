@@ -49,10 +49,10 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 * characteristic[condition][=].exclude = true
 
 // Include only Patients that don't have Adipositas 
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[condition][+]
   * definitionByTypeAndValue
     * type = $loinc#39156-5 "Body Mass Index (BMI) [Ratio]" 
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 29.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[condition][=].exclude = false
