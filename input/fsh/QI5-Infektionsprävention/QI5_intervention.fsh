@@ -70,7 +70,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * description.text = "The consumption of hand disinfectant is more than 80 litres per 1000 days."
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
-    * detailRange.low = 80 'liter' "liter"
+    * detailRange.low = 80 $ucum#L "liter"
     * due = 1000 $ucum#d "day"
 
 

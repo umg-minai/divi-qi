@@ -38,6 +38,6 @@ Description: "Intensive Care Patients with Invasive Ventilation"
 // Include only Patients with Invasive Ventilation
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#226471000000101 "Invasive Ventilation"
+    * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 

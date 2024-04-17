@@ -42,13 +42,13 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that don't have Adipositas 
-* characteristic[condition][+]
+* characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#60621009 "Body Mass Index"
+    * type = $loinc#LP35925-4 "Body Mass Index (BMI)"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 29.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[condition][=].exclude = false
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Exclude Patients with Contraindication of Enteral Feeding 
 * characteristic[condition][+]
