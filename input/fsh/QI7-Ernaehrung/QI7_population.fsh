@@ -14,10 +14,10 @@ Description: "Intensive Care Patients with Predicted Insufficient Energy Intake"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients with Predicted Insufficient Energy Intake 
-* characteristic[procedure][+]
+* characteristic[condition][+]
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#440331000124103 "Predicted Inadequate Energy Intake"
-* characteristic[procedure][=].exclude = false
+* characteristic[condition][=].exclude = false
 
 
 Instance: IntensiveCarePatients-ClinicallyFed-NoAdipositas
