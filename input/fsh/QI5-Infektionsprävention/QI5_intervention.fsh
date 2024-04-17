@@ -64,8 +64,8 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * goalId[+] = "assessment-hand-disinfectant-consumption"
 
 // Define Goal for the Hand-Disinfectant Consumption
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-hand-disinfectant-consumption"
   * description.text = "The consumption of hand disinfectant is more than 80 litres per 1000 days."
   * target[+]
@@ -98,8 +98,8 @@ Description: "The number of infections per invasive devices is at zero."
   * goalId[+] = "assessment-infection-device-ratio"
 
 // Define Goal for the Infection-per-Device Ratio
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-infection-device-ratio"
   * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
@@ -132,8 +132,8 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * goalId[+] = "assessment-pneumonia-ventilated-patients-ratio"
 
 // Define Goal for the Pneumonia-Ventilated-Patients-Ratio
-* goal[assessmentScale][+]
-  * category = $sct#273249006 "Assessment scales (assessment scale)"
+* goal[other][+]
+  * category = $sct#74964007 "Other (qualifier value)"
   * id = "assessment-pneumonia-ventilated-patients-ratio"
   * description.text = "The number of pneumonia cases per ventilated patients is at zero."
   * target[+]
