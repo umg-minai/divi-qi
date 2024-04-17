@@ -44,8 +44,8 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 // Exclude Patients with a Contraindication of Enteral Feeding 
 * characteristic[condition][+]
   * definitionByTypeAndValue
-    * offset = $sct#103306004 "Contraindication to"
-    * valueCodeableConcept = $sct#229912004 "Enteral Feeding"
+    * offset = $sct#229912004 "Enteral Feeding"
+    * valueCodeableConcept = $sct#103306004 "Contraindication to"
 * characteristic[condition][=].exclude = true
 
 // Include only Patients that don't have Adipositas 
