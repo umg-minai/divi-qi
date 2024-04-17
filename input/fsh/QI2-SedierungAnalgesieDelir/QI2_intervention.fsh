@@ -56,7 +56,7 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-early-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#851211000000105 "Assessment of Sedation Level"
+* code = $sct-uk#851211000000105 "Assessment of Sedation Level"
 * timingTiming
   * repeat
     * frequency = 1
@@ -72,7 +72,7 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-late-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#851211000000105 "Assessment of Sedation Level"
+* code = $sct-uk#851211000000105 "Assessment of Sedation Level"
 * timingTiming
   * repeat
     * frequency = 1
@@ -88,7 +88,7 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-night-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#851211000000105 "Assessment of Sedation Level"
+* code = $sct-uk#851211000000105 "Assessment of Sedation Level"
 * timingTiming
   * repeat
     * frequency = 1
@@ -227,7 +227,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "sedation-rass-inrange-goal"
   * description.text = "Sedation Level should be within RASS scores of -1 to +1"
   * target[+]
-    * measure = $sct#457441000124102 "Richmond agitation-sedation scale"
+    * measure = $sct-us#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
       * low = -1 '' ""
       * high = 1 '' ""
@@ -238,7 +238,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "analgesia-nrs-inrange-goal"
   * description.text = "Analgesia Level should be within NRS scores of 0 to 3"
   * target[+]
-    * measure = $sct#1284852002 "Numeric Pain Rating Scale"
+    * measure = $sct-int#1284852002 "Numeric Pain Rating Scale"
     * detailRange
       * low = 0 '' ""
       * high = 3 '' ""
