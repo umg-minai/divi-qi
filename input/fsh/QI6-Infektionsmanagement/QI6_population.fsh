@@ -16,6 +16,6 @@ Description: "Intensive Care Patients with at least one antibiotic"
 // Include only Patients that have at least one antibiotic
 * characteristic[procedure][+]
   * definitionByTypeAndValue
-    * valueCodeableConcept = $sct#41000005 "Antibiotic"
+    * valueCodeableConcept = $sct#281789004 "Antibiotic therapy (procedure)"
 * characteristic[procedure][=].exclude = false
 
