@@ -44,7 +44,7 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
 // Include only Patients that don't have Adipositas 
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $loinc#39156-5 "Body Mass Index (BMI) [Ratio]" BLA
+    * type = $loinc#39156-5 "Body Mass Index (BMI) [Ratio]" 
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 29.999999999 'mm[Hg]' "mm[Hg]"
