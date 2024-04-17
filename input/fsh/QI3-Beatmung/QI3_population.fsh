@@ -19,24 +19,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29
@@ -60,24 +56,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.21-0.29
 * characteristic[ventilationObservableLOINC][+]
@@ -110,24 +102,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.30-0.39
 * characteristic[ventilationObservableLOINC][+]
@@ -160,24 +148,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.40-0.49
 * characteristic[ventilationObservableLOINC][+]
@@ -210,24 +194,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.50-0.59
 * characteristic[ventilationObservableLOINC][+]
@@ -260,24 +240,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.60-0.79
 * characteristic[ventilationObservableLOINC][+]
@@ -310,24 +286,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=0.80-0.99
 * characteristic[ventilationObservableLOINC][+]
@@ -360,24 +332,20 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
     * valueCodeableConcept = $sct#1258985005 "Invasive mechanical ventilation"
 * characteristic[procedure][=].exclude = false
 
-// Include only Patients with Severe ARDS (combination of ARDS and Oxygenation Index <100)
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
-  * characteristic[condition][=].exclude = false
+// Include only Patients with ARDS 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#67782005 "Acute Respiratory Distress Syndrome"
+* characteristic[condition][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
-    * definitionByTypeAndValue
-      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
-      * valueRange
-        * low = 0 'mm[Hg]' "mm[Hg]"
-        * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
-
-* characteristic[=].exclude = false
+// Include only Patients with Oxygenation Index <100
+* characteristic[ventilationObservableLOINC][+]
+  * definitionByTypeAndValue
+    * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
+    * valueRange
+      * low = 0 'mm[Hg]' "mm[Hg]"
+      * high = 99.999999999 'mm[Hg]' "mm[Hg]"
+* characteristic[ventilationObservableLOINC][=].exclude = false
 
 // Include only Patients with FiO2=1.0
 * characteristic[ventilationObservableLOINC][+]
