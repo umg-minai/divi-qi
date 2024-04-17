@@ -14,8 +14,9 @@ Description: "Intensive Care Patients without a no-mobilization order"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that don't have a no-mobilization order
-* characteristic[+]
+* characteristic[1]
   * definitionByTypeAndValue
+    * type = $sct#721963009 "Order (record artifact)"
     * valueCodeableConcept = $divi-qi-s#ORDER-NO-MOBIL "Order to not mobilize"
-* characteristic[=].exclude = true
+* characteristic[1].exclude = true
 
