@@ -18,23 +18,23 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyAssessmentAntibioticIndication)
+  * definitionCanonical = Canonical(DailyAssessmentAntibioticIndication)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyAssessmentAntibioticFocus)
+  * definitionCanonical = Canonical(DailyAssessmentAntibioticFocus)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyAssessmentAntibioticDuration)
+  * definitionCanonical = Canonical(DailyAssessmentAntibioticDuration)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: dailyAssessmentAntibioticIndication
+Instance: DailyAssessmentAntibioticIndication
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."
-* name = "dailyAssessmentAntibioticIndication"
+* name = "DailyAssessmentAntibioticIndication"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-indication)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -45,12 +45,12 @@ Description: "All Antibiotics are daily re-evaluated for the Indication for each
     * period = 1
     * periodUnit = $ucum#d "day"
 
-Instance: dailyAssessmentAntibioticFocus
+Instance: DailyAssessmentAntibioticFocus
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Focus for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Focus for each Antibiotic."
-* name = "dailyAssessmentAntibioticFocus"
+* name = "DailyAssessmentAntibioticFocus"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-focus)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -61,12 +61,12 @@ Description: "All Antibiotics are daily re-evaluated for the Focus for each Anti
     * period = 1
     * periodUnit = $ucum#d "day"
 
-Instance: dailyAssessmentAntibioticDuration
+Instance: DailyAssessmentAntibioticDuration
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Duration of Antibiotic Therapy"
 Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic."
-* name = "dailyAssessmentAntibioticDuration"
+* name = "DailyAssessmentAntibioticDuration"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-duration)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -98,17 +98,17 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(frequentBloodCultures)
+  * definitionCanonical = Canonical(FrequentBloodCultures)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: frequentBloodCultures
+Instance: FrequentBloodCultures
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Frequent Blood Cultures"
 Description: "The Frequency of Blood Cultures is at least 80 per 1000 days."
-* name = "frequentBloodCultures"
+* name = "FrequentBloodCultures"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/frequent-blood-cultures)
 * insert publisher-experimental-version(7.0)
 * status = #active

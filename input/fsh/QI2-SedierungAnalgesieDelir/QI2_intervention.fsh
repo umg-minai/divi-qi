@@ -18,41 +18,41 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be asse
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(sedationAssessmentEarlyShift)
+  * definitionCanonical = Canonical(SedationAssessmentEarlyShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(sedationAssessmentLateShift)
+  * definitionCanonical = Canonical(SedationAssessmentLateShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(sedationAssessmentNightShift)
+  * definitionCanonical = Canonical(SedationAssessmentNightShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(painAssessmentEarlyShift)
+  * definitionCanonical = Canonical(PainAssessmentEarlyShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(painAssessmentLateShift)
+  * definitionCanonical = Canonical(PainAssessmentLateShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(painAssessmentNightShift)
+  * definitionCanonical = Canonical(PainAssessmentNightShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(deliriumAssessmentEarlyShift)
+  * definitionCanonical = Canonical(DeliriumAssessmentEarlyShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(deliriumAssessmentLateShift)
+  * definitionCanonical = Canonical(DeliriumAssessmentLateShift)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(deliriumAssessmentNightShift)
+  * definitionCanonical = Canonical(DeliriumAssessmentNightShift)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Actions
-Instance: sedationAssessmentEarlyShift
+Instance: SedationAssessmentEarlyShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Early Shift"
 Description: "Sedation should be assessed once between 6 AM and <2 PM every day."
-* name = "sedationAssessmentEarlyShift"
+* name = "SedationAssessmentEarlyShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-early-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -63,12 +63,12 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
-Instance: sedationAssessmentLateShift
+Instance: SedationAssessmentLateShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Late Shift"
 Description: "Sedation should be assessed once between 2 AM and <10 PM every day."
-* name = "sedationAssessmentLateShift"
+* name = "SedationAssessmentLateShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-late-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -79,12 +79,12 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
-Instance: sedationAssessmentNightShift
+Instance: SedationAssessmentNightShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Sedation Assessment during Night Shift"
 Description: "Sedation should be assessed once between 10 PM and <6 AM every day."
-* name = "sedationAssessmentNightShift"
+* name = "SedationAssessmentNightShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/sedation-assessment-night-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -95,12 +95,12 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
-Instance: painAssessmentEarlyShift
+Instance: PainAssessmentEarlyShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Early Shift"
 Description: "Pain should be assessed once between 6 AM and <2 PM every day."
-* name = "painAssessmentEarlyShift"
+* name = "PainAssessmentEarlyShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-early-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -111,12 +111,12 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
-Instance: painAssessmentLateShift
+Instance: PainAssessmentLateShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Late Shift"
 Description: "Pain should be assessed once between 2 AM and <10 PM every day."
-* name = "painAssessmentLateShift"
+* name = "PainAssessmentLateShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-late-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -127,12 +127,12 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
-Instance: painAssessmentNightShift
+Instance: PainAssessmentNightShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Pain Assessment during Night Shift"
 Description: "Pain should be assessed once between 10 PM and <6 AM every day."
-* name = "painAssessmentNightShift"
+* name = "PainAssessmentNightShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/pain-assessment-night-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -143,12 +143,12 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
-Instance: deliriumAssessmentEarlyShift
+Instance: DeliriumAssessmentEarlyShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Early Shift"
 Description: "Delirium should be assessed once between 6 AM and <2 PM every day."
-* name = "deliriumAssessmentEarlyShift"
+* name = "DeliriumAssessmentEarlyShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-early-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -159,12 +159,12 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
-Instance: deliriumAssessmentLateShift
+Instance: DeliriumAssessmentLateShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Late Shift"
 Description: "Delirium should be assessed once between 2 AM and <10 PM every day."
-* name = "deliriumAssessmentLateShift"
+* name = "DeliriumAssessmentLateShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-late-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -175,12 +175,12 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
     * period = 1
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
-Instance: deliriumAssessmentNightShift
+Instance: DeliriumAssessmentNightShift
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Delirium Assessment during Night Shift"
 Description: "Delirium should be assessed once between 10 PM and <6 AM every day."
-* name = "deliriumAssessmentNightShift"
+* name = "DeliriumAssessmentNightShift"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/delirium-assessment-night-shift)
 * insert publisher-experimental-version(7.0)
 * status = #active

@@ -42,7 +42,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.21-0.29"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-21to29)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-21to29"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_21to29"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -88,7 +88,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.30-0.39"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-30to39)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-30to39"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_30to39"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -134,7 +134,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.40-0.49"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-40to49)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-40to49"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_40to49"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -180,7 +180,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.50-0.59"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-50to59)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-50to59"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_50to59"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -226,7 +226,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.60-0.79"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-60to79)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-60to79"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_60to79"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -272,7 +272,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.80-0.99"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-80to99)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-80to99"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_80to99"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -318,7 +318,7 @@ Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventil
 Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00"
 * insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-100)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2-100"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_100"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]

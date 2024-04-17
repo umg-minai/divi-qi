@@ -18,17 +18,17 @@ Description: "For all Intensive Care Patients, an initial structured communicati
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(firstCommunicationPatientsRelativesWithin72hours)
+  * definitionCanonical = Canonical(FirstCommunicationPatientsRelativesWithin72hours)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: firstCommunicationPatientsRelativesWithin72hours
+Instance: FirstCommunicationPatientsRelativesWithin72hours
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "First Communication with Patients and/or their Relatives within 72 hours"
 Description: "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."
-* name = "firstCommunicationPatientsRelativesWithin72hours"
+* name = "FirstCommunicationPatientsRelativesWithin72hours"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/first-communication-patients-relatives-within-24hours)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -65,17 +65,17 @@ Description: "For all Intensive Care Patients, at least one structured communica
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(weeklyCommunicationPatientsRelatives)
+  * definitionCanonical = Canonical(WeeklyCommunicationPatientsRelatives)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: weeklyCommunicationPatientsRelatives
+Instance: WeeklyCommunicationPatientsRelatives
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Weekly Communication with Patients and Relatives"
 Description: "At least one structured communication with the Patients and/or their Relatives takes place every week."
-* name = "weeklyCommunicationPatientsRelatives"
+* name = "WeeklyCommunicationPatientsRelatives"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/weekly-communication-patients-relatives)
 * insert publisher-experimental-version(7.0)
 * status = #active

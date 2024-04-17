@@ -18,16 +18,16 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyMultiprofessionalWardRounds)
+  * definitionCanonical = Canonical(DailyMultiprofessionalWardRoundsAction)
   * code = $sct#74964007 "Other (qualifier value)"
 
 // Recommended Action
-Instance: dailyMultiprofessionalWardRounds
+Instance: DailyMultiprofessionalWardRoundsAction
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily multiprofessional ward rounds"
 Description: "Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist."
-* name = "dailyMultiprofessionalWardRounds"
+* name = "DailyMultiprofessionalWardRoundsAction"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-ward-rounds)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -60,17 +60,17 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyTreatmentGoals)
+  * definitionCanonical = Canonical(DailyTreatmentGoals)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: dailyTreatmentGoals
+Instance: DailyTreatmentGoals
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Treatment Goals"
 Description: "Daily Treatment Goals are set at least once every day."
-* name = "dailyTreatmentGoals"
+* name = "DailyTreatmentGoals"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-treatment-goals)
 * insert publisher-experimental-version(7.0)
 * status = #active

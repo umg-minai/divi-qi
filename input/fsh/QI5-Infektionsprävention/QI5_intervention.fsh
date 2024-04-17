@@ -18,17 +18,17 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyStopOrdersInvasiveDevices)
+  * definitionCanonical = Canonical(DailyStopOrdersInvasiveDevices)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: dailyStopOrdersInvasiveDevices
+Instance: DailyStopOrdersInvasiveDevices
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Stop-Orders for Invasive Devices"
 Description: "All invasive devices have a daily re-evaluation regarding the necessity of each device."
-* name = "dailyStopOrdersInvasiveDevices"
+* name = "DailyStopOrdersInvasiveDevices"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
 * insert publisher-experimental-version(7.0)
 * status = #active

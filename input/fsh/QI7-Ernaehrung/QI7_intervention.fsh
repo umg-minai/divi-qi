@@ -18,17 +18,17 @@ Description: "All Intensive Care Patients for which a sufficient oral nutrition 
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(firstEnteralFeedingWithin24hours)
+  * definitionCanonical = Canonical(FirstEnteralFeedingWithin24hours)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: firstEnteralFeedingWithin24hours
+Instance: FirstEnteralFeedingWithin24hours
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "First Enteral Feeding Within 24 hours"
 Description: "First Enteral Feeding occurs within 24 hours after Admission to Intensive Care."
-* name = "firstEnteralFeedingWithin24hours"
+* name = "FirstEnteralFeedingWithin24hours"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/first-enteral-feeding-within-24hours)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -64,17 +64,17 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(dailySufficientFeeding)
+  * definitionCanonical = Canonical(DailySufficientFeeding)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: dailySufficientFeeding
+Instance: DailySufficientFeeding
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "The daily calorie intake is sufficient"
 Description: "The daily amount of calories matches the individual requirements."
-* name = "dailySufficientFeeding"
+* name = "DailySufficientFeeding"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-sufficient-feeding)
 * insert publisher-experimental-version(7.0)
 * status = #active

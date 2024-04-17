@@ -103,7 +103,7 @@ Title: "PEEP adjusted to FiO2=0.21-0.29"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-21to29)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-21to29"
+* name = "Intervention_PEEP_adjustedTo_FiO2_21to29"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -138,7 +138,7 @@ Title: "PEEP adjusted to FiO2=0.30-0.39"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-30to39)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-30to39"
+* name = "Intervention_PEEP_adjustedTo_FiO2_30to39"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -173,7 +173,7 @@ Title: "PEEP adjusted to FiO2=0.40-0.49"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-40to49)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-40to49"
+* name = "Intervention_PEEP_adjustedTo_FiO2_40to49"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -208,7 +208,7 @@ Title: "PEEP adjusted to FiO2=0.50-0.59"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-50to59)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-50to59"
+* name = "Intervention_PEEP_adjustedTo_FiO2_50to59"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -243,7 +243,7 @@ Title: "PEEP adjusted to FiO2=0.60-0.79"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-60to79)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-60to79"
+* name = "Intervention_PEEP_adjustedTo_FiO2_60to79"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -278,7 +278,7 @@ Title: "PEEP adjusted to FiO2=0.80-0.99"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-80to99)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-80to99"
+* name = "Intervention_PEEP_adjustedTo_FiO2_80to99"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -313,7 +313,7 @@ Title: "PEEP adjusted to FiO2=1.00"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-100)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2-100"
+* name = "Intervention_PEEP_adjustedTo_FiO2_100"
 * date = "2024-03-29"
 * version = "1.0"
 

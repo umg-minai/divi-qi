@@ -18,20 +18,20 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 // Define Intervention 
 * insert rs-combination-any
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyWeaningAssessments)
+  * definitionCanonical = Canonical(DailyWeaningAssessments)
   * code = $sct#74964007 "Other (qualifier value)"
 * action[other][+] 
-  * definitionCanonical = Canonical(dailyWeaningTrials)
+  * definitionCanonical = Canonical(DailyWeaningTrials)
   * code = $sct#74964007 "Other (qualifier value)"
 
 
 // Recommended Action
-Instance: dailyWeaningAssessments
+Instance: DailyWeaningAssessments
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessments of Readiness-to-wean from mechanical ventilation"
 Description: "Readiness-to-wean from mechanical ventilation is assessed periodically every day."
-* name = "dailyWeaningAssessments"
+* name = "DailyWeaningAssessments"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-assessments)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -42,12 +42,12 @@ Description: "Readiness-to-wean from mechanical ventilation is assessed periodic
     * period = 1
     * periodUnit = $ucum#d "day"
 
-Instance: dailyWeaningTrials
+Instance: DailyWeaningTrials
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Weaning Trials"
 Description: "Weaning trials are performed periodically every day."
-* name = "dailyWeaningTrials"
+* name = "DailyWeaningTrials"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-trials)
 * insert publisher-experimental-version(7.0)
 * status = #active
@@ -79,16 +79,16 @@ Description: "The fraction of patients discharged with dependence on home ventil
 // Define Intervention 
 * insert rs-combination-all
 * action[other][+] 
-  * definitionCanonical = Canonical(noDischargeWithHomeVentilation)
+  * definitionCanonical = Canonical(NoDischargeWithHomeVentilation)
   * code = $sct#74964007 "Other (qualifier value)"
 
 // Recommended Action
-Instance: noDischargeWithHomeVentilation
+Instance: NoDischargeWithHomeVentilation
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "No Discharge with Home Ventilation"
 Description: "The patient is not discharged with home ventilation."
-* name = "noDischargeWithHomeVentilation"
+* name = "NoDischargeWithHomeVentilation"
 * insert canonical-url(DIVI-DigiQIs, recommended-action/no-discharge-with-home-ventilation)
 * insert publisher-experimental-version(7.0)
 * status = #active
