@@ -14,10 +14,10 @@ Description: "Intensive Care Patients with at least one invasive device"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that have at least one invasive device 
-* characteristic[procedure][+]
+* characteristic[device][+]
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#19923001 "Catheter"
-* characteristic[procedure][=].exclude = false
+* characteristic[device][=].exclude = false
 
 
 Instance: IntensiveCarePatients-InvasiveVentilation
