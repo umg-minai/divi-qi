@@ -38,7 +38,7 @@ Description: "First Mobilization occurs within 24 hours after Admission to Inten
     * frequency = 1
     * period = 1
     * periodUnit = $ucum#d "day"
-/*     * timeFromEvent
+/*     * timeFromEvent /
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
         * high = 24 'hours' "hours" */
