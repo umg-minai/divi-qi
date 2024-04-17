@@ -14,8 +14,8 @@ Description: "Intensive Care Patients without a no-mobilization order"
 * characteristic[procedure][=].exclude = false
 
 // Include only Patients that don't have a no-mobilization order
-* characteristic[procedure][+]
+* characteristic[+]
   * definitionByTypeAndValue
     * valueCodeableConcept = $divi-qi-s#ORDER-NO-MOBIL "Order to not mobilize"
-* characteristic[procedure][=].exclude = true
+* characteristic[=].exclude = true
 
