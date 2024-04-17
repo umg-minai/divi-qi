@@ -30,7 +30,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -71,7 +71,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -82,8 +82,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.21-0.29
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 0 '%' "%"
       * high = 29.999999999 '%' "%"
@@ -122,7 +121,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -133,8 +132,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.30-0.39
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 30 '%' "%"
       * high = 39.999999999 '%' "%"
@@ -173,7 +171,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -184,8 +182,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.40-0.49
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 40 '%' "%"
       * high = 49.999999999 '%' "%"
@@ -224,7 +221,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -235,8 +232,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.50-0.59
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 50 '%' "%"
       * high = 59.999999999 '%' "%"
@@ -275,7 +271,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -286,8 +282,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.60-0.79
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 60 '%' "%"
       * high = 79.999999999 '%' "%"
@@ -326,7 +321,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -337,8 +332,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=0.80-0.99
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 80 '%' "%"
       * high = 99.999999999 '%' "%"
@@ -377,7 +371,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#50984-4 "Horowitz-Index in Arterial Blood"
+      * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
       * valueRange
         * low = 0 'mm[Hg]' "mm[Hg]"
         * high = 99.999999999 'mm[Hg]' "mm[Hg]"
@@ -388,8 +382,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 // Include only Patients with FiO2=1.0
 * characteristic[ventilationObservableLOINC][+]
   * definitionByTypeAndValue
-    * type = $sct#364698001 "Ventilator observable"
-    * valueCodeableConcept = $loinc#3150-0 "Inhaled oxygen concentration"
+    * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 100 '%' "%"
       * high = 100 '%' "%"
