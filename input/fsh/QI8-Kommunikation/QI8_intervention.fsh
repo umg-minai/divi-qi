@@ -24,7 +24,7 @@ Description: "For all Intensive Care Patients, an initial structured communicati
 
 // Recommended Action
 Instance: FirstCommunicationPatientsRelativesWithin72hours
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "First Communication with Patients and/or their Relatives within 72 hours"
 Description: "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."
@@ -33,16 +33,12 @@ Description: "An initial structured communication with the Patients and/or their
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#225330006 "Client Participation"
-* timingTiming
-  * repeat
-    * frequency = 1
-    * period = 7
-    * periodUnit = $ucum#d "day" // TODO: innerhalb von 72h nach Aufnahme ! -> extension (relative time)?
-/*     * timeFromEvent
-      * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-      * range 
-        * high = 72 'hours' "hours" */
-
+* kind = $cs-fhir-types#Task "Task"
+* extension[relativeTime]
+  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+  * extension[offset].valueRange
+    * low = 0 'h' "hours"
+    * high = 72 'h' "hours"
 
 
 Instance: PeriodicCommunicationPatientsRelatives
@@ -71,7 +67,7 @@ Description: "For all Intensive Care Patients, at least one structured communica
 
 // Recommended Action
 Instance: WeeklyCommunicationPatientsRelatives
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Weekly Communication with Patients and Relatives"
 Description: "At least one structured communication with the Patients and/or their Relatives takes place every week."
@@ -80,6 +76,7 @@ Description: "At least one structured communication with the Patients and/or the
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#225330006 "Client Participation"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1

@@ -24,7 +24,7 @@ Description: "All Intensive Care Patients for which a sufficient oral nutrition 
 
 // Recommended Action
 Instance: FirstEnteralFeedingWithin24hours
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "First Enteral Feeding Within 24 hours"
 Description: "First Enteral Feeding occurs within 24 hours after Admission to Intensive Care."
@@ -33,15 +33,13 @@ Description: "First Enteral Feeding occurs within 24 hours after Admission to In
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#229912004 "Enteral Feeding"
-* timingTiming
-  * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day" // TODO: innerhalb von 24h nach Aufnahme ! -> extension (relative time) ?
-/*     * timeFromEvent
-      * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-      * range 
-        * high = 24 'hours' "hours" */
+* kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
+* extension[relativeTime]
+  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+  * extension[offset].valueRange
+    * low = 0 'h' "hours"
+    * high = 24 'h' "hours"
+
 
 
 Instance: SufficientFeeding
@@ -70,7 +68,7 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 
 // Recommended Action
 Instance: DailySufficientFeeding
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "The daily calorie intake is sufficient"
 Description: "The daily amount of calories matches the individual requirements."
@@ -80,6 +78,7 @@ Description: "The daily amount of calories matches the individual requirements."
 * status = #active
 * code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount" // TODO: "is sufficient" is missing
 // TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition?
+* kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
 * timingTiming
   * repeat
     * frequency = 1

@@ -24,7 +24,7 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
 
 // Recommended Action
 Instance: FirstMobilizationWithin24hours
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "First Mobilization within 24 hours"
 Description: "First Mobilization occurs within 24 hours after Admission to Intensive Care."
@@ -33,15 +33,13 @@ Description: "First Mobilization occurs within 24 hours after Admission to Inten
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#74923002 "Mobilization"
-* timingTiming
-  * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day" // TODO: innerhalb von 24h nach Aufnahme ! -> extension (relative time) ?
-/*     * timeFromEvent
-      * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-      * range 
-        * high = 24 'hours' "hours" */
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
+* extension[relativeTime]
+  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+  * extension[offset].valueRange
+    * low = 0 'h' "hours"
+    * high = 24 'h' "hours"
+
 
 
 Instance: PeriodicMobilization
@@ -70,7 +68,7 @@ Description: "All Intensive Care Patients that don't have a no-mobilization orde
 
 // Recommended Action
 Instance: DailyMobilization
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Mobilization"
 Description: "Mobilization that occurs at least once a day."
@@ -79,6 +77,7 @@ Description: "Mobilization that occurs at least once a day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#74923002 "Mobilization"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
