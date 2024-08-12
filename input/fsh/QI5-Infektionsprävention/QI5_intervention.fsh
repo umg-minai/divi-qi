@@ -1,3 +1,5 @@
+// TODO: is the basis here (for population) the patient or the device?
+
 Instance: StopOdersInvasiveDevices
 InstanceOf: recommendation-plan 
 Usage: #definition
@@ -32,7 +34,7 @@ Description: "All invasive devices have a daily re-evaluation regarding the nece
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#230165009 "Indication of"
+* code = $sct#230165009 "Indication of" // TODO: find better code (self-defined?)
 * timingTiming
   * repeat
     * frequency = 1

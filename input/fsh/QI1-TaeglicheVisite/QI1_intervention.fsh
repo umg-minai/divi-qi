@@ -17,7 +17,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 
 // Define Intervention 
 * insert rs-combination-all
-* action[other][+] 
+* action[other][+] // TODO: Check all slice names
   * definitionCanonical = Canonical(DailyMultiprofessionalWardRoundsAction)
   * code = $sct#74964007 "Other (qualifier value)"
 

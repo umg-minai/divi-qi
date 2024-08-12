@@ -1,3 +1,5 @@
+// TODO: is the basis here (for population) the patient or the device?
+
 Instance: IntensiveCarePatients-InvasiveDevice
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition

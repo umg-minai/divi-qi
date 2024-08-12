@@ -29,7 +29,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 
 // Recommended Action
-Instance: DailyAssessmentAntibioticIndication
+Instance: DailyAssessmentAntibioticIndication // TODO: _each_ abx must be checked -> make abx the population? grouping variable?
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
@@ -38,7 +38,7 @@ Description: "All Antibiotics are daily re-evaluated for the Indication for each
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-indication)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#230165009 "Indication of"
+* code = $sct#230165009 "Indication of"  // TODO: find better code (self-defined?)
 * timingTiming
   * repeat
     * frequency = 1
@@ -54,7 +54,7 @@ Description: "All Antibiotics are daily re-evaluated for the Focus for each Anti
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-focus)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#272737002 "Site of"
+* code = $sct#272737002 "Site of" // TODO: find better code (self-defined?)
 * timingTiming
   * repeat
     * frequency = 1
@@ -70,7 +70,7 @@ Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-duration)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#261773006 "Duration of Therapy"
+* code = $sct#261773006 "Duration of Therapy" // TODO: find better code (self-defined?)
 * timingTiming
   * repeat
     * frequency = 1

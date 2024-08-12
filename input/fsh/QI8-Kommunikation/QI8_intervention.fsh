@@ -37,7 +37,7 @@ Description: "An initial structured communication with the Patients and/or their
   * repeat
     * frequency = 1
     * period = 7
-    * periodUnit = $ucum#d "day"
+    * periodUnit = $ucum#d "day" // TODO: innerhalb von 72h nach Aufnahme ! -> extension (relative time)?
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 

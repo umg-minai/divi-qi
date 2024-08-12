@@ -61,7 +61,7 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr  // TODO: hier einfügen und bei allen weiteren unten auch
 
 Instance: SedationAssessmentLateShift
 InstanceOf: ActivityDefinition

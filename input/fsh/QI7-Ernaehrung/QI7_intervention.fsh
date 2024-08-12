@@ -37,7 +37,7 @@ Description: "First Enteral Feeding occurs within 24 hours after Admission to In
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"
+    * periodUnit = $ucum#d "day" // TODO: innerhalb von 24h nach Aufnahme ! -> extension (relative time) ?
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -78,7 +78,8 @@ Description: "The daily amount of calories matches the individual requirements."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-sufficient-feeding)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount"
+* code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount" // TODO: "is sufficient" is missing
+// TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition?
 * timingTiming
   * repeat
     * frequency = 1

@@ -1,3 +1,5 @@
+// TODO: is the basis here (for population) the patient or the device?
+
 Instance: PeriodicAssessmentOfWeaning
 InstanceOf: recommendation-plan 
 Usage: #definition
@@ -83,7 +85,7 @@ Description: "The fraction of patients discharged with dependence on home ventil
   * code = $sct#74964007 "Other (qualifier value)"
 
 // Recommended Action
-Instance: NoDischargeWithHomeVentilation
+Instance: NoDischargeWithHomeVentilation // TODO: doNotPerform flag
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "No Discharge with Home Ventilation"
