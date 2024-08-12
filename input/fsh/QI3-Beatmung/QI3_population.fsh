@@ -26,13 +26,13 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29
@@ -63,22 +63,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.21-0.29
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 0 '%' "%"
       * high = 29.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39
@@ -109,22 +109,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.30-0.39
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 30 '%' "%"
       * high = 39.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49
@@ -155,22 +155,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.40-0.49
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 40 '%' "%"
       * high = 49.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59
@@ -201,22 +201,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.50-0.59
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 50 '%' "%"
       * high = 59.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79
@@ -247,22 +247,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.60-0.79
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 60 '%' "%"
       * high = 79.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99
@@ -293,22 +293,22 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=0.80-0.99
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 80 '%' "%"
       * high = 99.999999999 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 
 Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100
@@ -339,19 +339,19 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
 * characteristic[condition][=].exclude = false
 
 // Include only Patients with Oxygenation Index <100
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#50984-4 "Horowitz Index in Arterial Blood"
     * valueRange
       * low = 0 'mm[Hg]' "mm[Hg]"
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false
 
 // Include only Patients with FiO2=1.0
-* characteristic[ventilationObservableLOINC][+]
+* characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
     * valueRange
       * low = 100 '%' "%"
       * high = 100 '%' "%"
-* characteristic[ventilationObservableLOINC][=].exclude = false
+* characteristic[observation][=].exclude = false

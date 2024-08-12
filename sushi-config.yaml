@@ -11,9 +11,12 @@ publisher:
   name: Example
   url: https://www.example.com
 
+instanceOptions:
+  manualSliceOrdering: true
+
 dependencies:
   de.netzwerk-universitaetsmedizin.ebm-cpg:
-    version: 0.8.0-snapshot
+    version: 1.0.0
 
 pages:
   index.md:
