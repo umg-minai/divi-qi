@@ -48,7 +48,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be asse
 
 // Recommended Actions
 Instance: SedationAssessmentEarlyShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Sedation Assessment during Early Shift"
 Description: "Sedation should be assessed once between 6 AM and <2 PM every day."
@@ -57,6 +57,7 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct-uk#851211000000105 "Assessment of Sedation Level"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -64,7 +65,7 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr  // TODO: hier einfügen und bei allen weiteren unten auch
 
 Instance: SedationAssessmentLateShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Sedation Assessment during Late Shift"
 Description: "Sedation should be assessed once between 2 AM and <10 PM every day."
@@ -73,6 +74,7 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct-uk#851211000000105 "Assessment of Sedation Level"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -80,7 +82,7 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: SedationAssessmentNightShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Sedation Assessment during Night Shift"
 Description: "Sedation should be assessed once between 10 PM and <6 AM every day."
@@ -89,6 +91,7 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct-uk#851211000000105 "Assessment of Sedation Level"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -96,7 +99,7 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
 Instance: PainAssessmentEarlyShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Pain Assessment during Early Shift"
 Description: "Pain should be assessed once between 6 AM and <2 PM every day."
@@ -105,6 +108,7 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#370778008 "Assessment of Pain Control"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -112,7 +116,7 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
 Instance: PainAssessmentLateShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Pain Assessment during Late Shift"
 Description: "Pain should be assessed once between 2 AM and <10 PM every day."
@@ -121,6 +125,7 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#370778008 "Assessment of Pain Control"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -128,7 +133,7 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: PainAssessmentNightShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Pain Assessment during Night Shift"
 Description: "Pain should be assessed once between 10 PM and <6 AM every day."
@@ -137,6 +142,7 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#370778008 "Assessment of Pain Control"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -144,7 +150,7 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
     * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
 
 Instance: DeliriumAssessmentEarlyShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Delirium Assessment during Early Shift"
 Description: "Delirium should be assessed once between 6 AM and <2 PM every day."
@@ -153,6 +159,7 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#733870009 "Assessment of Delirium"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -160,7 +167,7 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
     * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
 
 Instance: DeliriumAssessmentLateShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Delirium Assessment during Late Shift"
 Description: "Delirium should be assessed once between 2 AM and <10 PM every day."
@@ -169,6 +176,7 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#733870009 "Assessment of Delirium"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -176,7 +184,7 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
     * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
 
 Instance: DeliriumAssessmentNightShift
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Delirium Assessment during Night Shift"
 Description: "Delirium should be assessed once between 10 PM and <6 AM every day."
@@ -185,6 +193,7 @@ Description: "Delirium should be assessed once between 10 PM and <6 AM every day
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#733870009 "Assessment of Delirium"
+* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
     * frequency = 1
@@ -230,7 +239,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $sct-us#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
       * low = -1 '' ""
-      * high = 1 '' ""
+      * high = 1 '' ""// todo: check if this is correct
 
 // Define Goal for Analgesia Assessment per NRS
 * goal[assessmentScale][+]
@@ -240,7 +249,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $sct-int#1284852002 "Numeric Pain Rating Scale"
     * detailRange
-      * low = 0 '' ""
+      * low = 0 '' ""// todo: check if this is correct
       * high = 3 '' ""
 
 // Define Goal for Analgesia Assessment per VAS
@@ -252,7 +261,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $sct#273904000 "Visual analog pain scale"
     * detailRange
       * low = 0 '' ""
-      * high = 3 '' ""
+      * high = 3 '' ""// todo: check if this is correct
 
 // Define Goal for Analgesia Assessment per BPS
 * goal[assessmentScale][+]
@@ -263,7 +272,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $divi-qi-s#BPS "Behavioral Pain Scale"
     * detailRange
       * low = 0 '' ""
-      * high = 3 '' ""
+      * high = 3 '' ""// todo: check if this is correct
 
 // Define Goal for Delirium Assessment per CAM-ICU
 * goal[assessmentScale][+]
@@ -274,7 +283,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $divi-qi-s#CAM-ICU "CAM-ICU"
     * detailRange
       * low = 0 '' ""
-      * high = 0 '' ""
+      * high = 0 '' ""// todo: check if this is correct
 
 // Define Goal for Delirium Assessment per ICDSC
 * goal[assessmentScale][+]
@@ -285,4 +294,4 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $divi-qi-s#ICDSC "ICDSC"
     * detailRange
       * low = 0 '' ""
-      * high = 0 '' ""
+      * high = 0 '' "" // todo: check if this is correct

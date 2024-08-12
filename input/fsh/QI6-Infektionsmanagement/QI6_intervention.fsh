@@ -30,7 +30,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 // Recommended Action
 Instance: DailyAssessmentAntibioticIndication // TODO: _each_ abx must be checked -> make abx the population? grouping variable?
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."
@@ -39,6 +39,7 @@ Description: "All Antibiotics are daily re-evaluated for the Indication for each
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#230165009 "Indication of"  // TODO: find better code (self-defined?)
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
@@ -46,7 +47,7 @@ Description: "All Antibiotics are daily re-evaluated for the Indication for each
     * periodUnit = $ucum#d "day"
 
 Instance: DailyAssessmentAntibioticFocus
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Assessment of the Focus for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Focus for each Antibiotic."
@@ -55,6 +56,7 @@ Description: "All Antibiotics are daily re-evaluated for the Focus for each Anti
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#272737002 "Site of" // TODO: find better code (self-defined?)
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
@@ -62,7 +64,7 @@ Description: "All Antibiotics are daily re-evaluated for the Focus for each Anti
     * periodUnit = $ucum#d "day"
 
 Instance: DailyAssessmentAntibioticDuration
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Assessment of the Duration of Antibiotic Therapy"
 Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic."
@@ -71,6 +73,7 @@ Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#261773006 "Duration of Therapy" // TODO: find better code (self-defined?)
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
@@ -104,7 +107,7 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
 
 // Recommended Action
 Instance: FrequentBloodCultures
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Frequent Blood Cultures"
 Description: "The Frequency of Blood Cultures is at least 80 per 1000 days."
@@ -113,6 +116,7 @@ Description: "The Frequency of Blood Cultures is at least 80 per 1000 days."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#30088009 "Blood Culture"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 80

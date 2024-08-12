@@ -26,7 +26,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 
 // Recommended Action
 Instance: DailyStopOrdersInvasiveDevices
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Stop-Orders for Invasive Devices"
 Description: "All invasive devices have a daily re-evaluation regarding the necessity of each device."
@@ -35,6 +35,7 @@ Description: "All invasive devices have a daily re-evaluation regarding the nece
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#230165009 "Indication of" // TODO: find better code (self-defined?)
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1

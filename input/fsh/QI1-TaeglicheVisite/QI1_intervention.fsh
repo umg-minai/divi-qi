@@ -23,7 +23,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 
 // Recommended Action
 Instance: DailyMultiprofessionalWardRoundsAction
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily multiprofessional ward rounds"
 Description: "Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist."
@@ -32,6 +32,7 @@ Description: "Every Intensive Care Patient is visited daily in multiprofessional
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $divi-qi-s#VISITE-FA-ZB-ITS "Multidisciplinary ward round led by an intensive care specialist"
+* kind = $cs-fhir-types#Task "Task"
 //* code = $sct#1236923003 "Participation in multidisciplinary ward round"
 * timingTiming
   * repeat
@@ -66,7 +67,7 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
 
 // Recommended Action
 Instance: DailyTreatmentGoals
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Treatment Goals"
 Description: "Daily Treatment Goals are set at least once every day."
@@ -75,6 +76,7 @@ Description: "Daily Treatment Goals are set at least once every day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $divi-qi-s#TAGESZIEL "Setting daily treatment goals"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1

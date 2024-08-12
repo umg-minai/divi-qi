@@ -29,7 +29,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 
 // Recommended Action
 Instance: DailyWeaningAssessments
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Assessments of Readiness-to-wean from mechanical ventilation"
 Description: "Readiness-to-wean from mechanical ventilation is assessed periodically every day."
@@ -38,6 +38,7 @@ Description: "Readiness-to-wean from mechanical ventilation is assessed periodic
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $divi-qi-s#EVAL-VENT-WEAN "Assessment of Readiness-to-wean from mechanical ventilation"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
@@ -45,7 +46,7 @@ Description: "Readiness-to-wean from mechanical ventilation is assessed periodic
     * periodUnit = $ucum#d "day"
 
 Instance: DailyWeaningTrials
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Weaning Trials"
 Description: "Weaning trials are performed periodically every day."
@@ -54,6 +55,7 @@ Description: "Weaning trials are performed periodically every day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#1259865002 "Weaning from mechanically assisted ventilation commenced"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
@@ -86,7 +88,7 @@ Description: "The fraction of patients discharged with dependence on home ventil
 
 // Recommended Action
 Instance: NoDischargeWithHomeVentilation // TODO: doNotPerform flag
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "No Discharge with Home Ventilation"
 Description: "The patient is not discharged with home ventilation."
@@ -95,6 +97,7 @@ Description: "The patient is not discharged with home ventilation."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#60631000119109 "Dependence on home ventilator" //Zum Zeitpunkt: $sct#306568008 "Discharge from intensive care service"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
