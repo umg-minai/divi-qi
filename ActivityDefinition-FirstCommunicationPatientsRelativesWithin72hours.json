@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "FirstCommunicationPatientsRelativesWithin72hours",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition FirstCommunicationPatientsRelativesWithin72hours</b></p><a name=\"FirstCommunicationPatientsRelativesWithin72hours\"> </a><a name=\"hcFirstCommunicationPatientsRelativesWithin72hours\"> </a><a name=\"FirstCommunicationPatientsRelativesWithin72hours-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-FirstCommunicationPatientsRelativesWithin72hours.html\">ActivityDefinition First Communication with Patients and/or their Relatives within 72 hours</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FirstCommunicationPatientsRelativesWithin72hours</p><p><b>title</b>: First Communication with Patients and/or their Relatives within 72 hours</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-12 10:22:52+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care.</p>\n</div><p><b>kind</b>: Task</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 225330006}\">Client Participation</span></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "contextCode",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "305351004",
+          "display" : "Admission to Intensive Care Unit"
+        }]
+      }
+    },
+    {
+      "url" : "offset",
+      "valueRange" : {
+        "low" : {
+          "value" : 0,
+          "unit" : "hours",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "h"
+        },
+        "high" : {
+          "value" : 72,
+          "unit" : "hours",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "h"
+        }
+      }
+    }],
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-communication-patients-relatives-within-24hours",
+  "version" : "7.0",
+  "name" : "FirstCommunicationPatientsRelativesWithin72hours",
+  "title" : "First Communication with Patients and/or their Relatives within 72 hours",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-08-12T10:22:52+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care.",
+  "kind" : "Task",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225330006",
+      "display" : "Client Participation"
+    }]
+  }
+}
