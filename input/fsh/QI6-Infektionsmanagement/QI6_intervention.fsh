@@ -29,8 +29,8 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 
 // Recommended Action
-Instance: DailyAssessmentAntibioticIndication // TODO: _each_ abx must be checked -> make abx the population? grouping variable?
-InstanceOf: RecommendationAction
+Instance: DailyAssessmentAntibioticIndication // TODO: _each_ abx must be checked -> make abx the population? grouping variable? oder verlagern in die vorverarbeitung (also eine variable die sagte: all antibiotices ...)?
+InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."

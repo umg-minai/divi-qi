@@ -79,7 +79,7 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
 
 Instance: SedationAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -96,7 +96,7 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
 
 Instance: PainAssessmentEarlyShift
 InstanceOf: RecommendationAction
@@ -113,7 +113,7 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr // TODO: - digipod code?
 
 Instance: PainAssessmentLateShift
 InstanceOf: RecommendationAction
@@ -130,7 +130,7 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
 
 Instance: PainAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -147,7 +147,7 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
 
 Instance: DeliriumAssessmentEarlyShift
 InstanceOf: RecommendationAction
@@ -164,7 +164,7 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr // TODO: - digipod code?
 
 Instance: DeliriumAssessmentLateShift
 InstanceOf: RecommendationAction
@@ -181,7 +181,7 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
 
 Instance: DeliriumAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -198,7 +198,7 @@ Description: "Delirium should be assessed once between 10 PM and <6 AM every day
   * repeat
     * frequency = 1
     * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr 
+    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
 
 
 

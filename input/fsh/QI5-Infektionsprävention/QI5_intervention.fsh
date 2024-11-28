@@ -74,7 +74,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
     * detailRange.low = 80 $ucum#L "liter"
-    * due = 1000 $ucum#d "day"
+    * due = 1000 $ucum#d "day" // TODO: is this reasonable? correct? can it be better?
 
 
 Instance: InfectionDeviceRatio
@@ -106,7 +106,7 @@ Description: "The number of infections per invasive devices is at zero."
   * id = "assessment-infection-device-ratio"
   * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
-    * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection"
+    * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection" // TOOD: aus vorverarbeitung eine variable definieren die sagt : "% infektionen pro device"
     * detailRange.low = 0 '' ""
     * due = 1 $ucum#d "day"
 

@@ -77,8 +77,7 @@ Description: "The daily amount of calories matches the individual requirements."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount" // TODO: "is sufficient" is missing
-// TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition?
-* kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
+// TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition? "wenn der wert des einen codes den wert des anderen codes erreicht hat"?
 * timingTiming
   * repeat
     * frequency = 1
