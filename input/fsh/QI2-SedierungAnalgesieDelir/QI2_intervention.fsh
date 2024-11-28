@@ -60,9 +60,8 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr  // TODO: hier einfügen und bei allen weiteren unten auch
+    * count = 1
+    * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: SedationAssessmentLateShift
 InstanceOf: RecommendationAction
@@ -77,9 +76,8 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: SedationAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -94,9 +92,8 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#NIGHT "Night"
 
 Instance: PainAssessmentEarlyShift
 InstanceOf: RecommendationAction
@@ -111,9 +108,8 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: PainAssessmentLateShift
 InstanceOf: RecommendationAction
@@ -128,9 +124,8 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: PainAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -145,9 +140,8 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#NIGHT "Night"
 
 Instance: DeliriumAssessmentEarlyShift
 InstanceOf: RecommendationAction
@@ -162,9 +156,8 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 6-14 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: DeliriumAssessmentLateShift
 InstanceOf: RecommendationAction
@@ -179,9 +172,8 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 14-22 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: DeliriumAssessmentNightShift
 InstanceOf: RecommendationAction
@@ -196,9 +188,8 @@ Description: "Delirium should be assessed once between 10 PM and <6 AM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"  //Zwischen 22-6 Uhr // TODO: - digipod code?
+    * count = 1
+    * when = $cs-fhir-event-timing#NIGHT "Night"
 
 
 
@@ -238,8 +229,8 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $sct-us#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
-      * low = -1 '' ""
-      * high = 1 '' "" // todo: check if this is correct
+      * low.value = -1
+      * high.value = 1
 
 // Define Goal for Analgesia Assessment per NRS
 * goal[assessmentScale][+]
@@ -249,8 +240,8 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $sct-int#1284852002 "Numeric Pain Rating Scale"
     * detailRange
-      * low = 0 '' "" // todo: check if this is correct
-      * high = 3 '' ""
+      * low.value = 0
+      * high.value = 3
 
 // Define Goal for Analgesia Assessment per VAS
 * goal[assessmentScale][+]
@@ -260,8 +251,8 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $sct#273904000 "Visual analog pain scale"
     * detailRange
-      * low = 0 '' ""
-      * high = 3 '' "" // todo: check if this is correct
+      * low.value = 0
+      * high.value = 3
 
 // Define Goal for Analgesia Assessment per BPS
 * goal[assessmentScale][+]
@@ -271,8 +262,8 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $divi-qi-s#BPS "Behavioral Pain Scale"
     * detailRange
-      * low = 0 '' ""
-      * high = 3 '' "" // todo: check if this is correct
+      * low.value = 0
+      * high.value = 3
 
 // Define Goal for Delirium Assessment per CAM-ICU
 * goal[assessmentScale][+]
@@ -282,8 +273,8 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $divi-qi-s#CAM-ICU "CAM-ICU"
     * detailRange
-      * low = 0 '' ""
-      * high = 0 '' "" // todo: check if this is correct
+      * low.value = 0
+      * high.value = 0
 
 // Define Goal for Delirium Assessment per ICDSC
 * goal[assessmentScale][+]
@@ -293,5 +284,5 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $divi-qi-s#ICDSC "ICDSC"
     * detailRange
-      * low = 0 '' ""
-      * high = 0 '' "" // todo: check if this is correct
+      * low.value = 0
+      * high.value = 0
