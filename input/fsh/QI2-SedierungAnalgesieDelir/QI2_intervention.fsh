@@ -239,7 +239,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $sct-us#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
       * low = -1 '' ""
-      * high = 1 '' ""// todo: check if this is correct
+      * high = 1 '' "" // todo: check if this is correct
 
 // Define Goal for Analgesia Assessment per NRS
 * goal[assessmentScale][+]
@@ -249,7 +249,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * target[+]
     * measure = $sct-int#1284852002 "Numeric Pain Rating Scale"
     * detailRange
-      * low = 0 '' ""// todo: check if this is correct
+      * low = 0 '' "" // todo: check if this is correct
       * high = 3 '' ""
 
 // Define Goal for Analgesia Assessment per VAS
@@ -261,7 +261,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $sct#273904000 "Visual analog pain scale"
     * detailRange
       * low = 0 '' ""
-      * high = 3 '' ""// todo: check if this is correct
+      * high = 3 '' "" // todo: check if this is correct
 
 // Define Goal for Analgesia Assessment per BPS
 * goal[assessmentScale][+]
@@ -272,7 +272,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $divi-qi-s#BPS "Behavioral Pain Scale"
     * detailRange
       * low = 0 '' ""
-      * high = 3 '' ""// todo: check if this is correct
+      * high = 3 '' "" // todo: check if this is correct
 
 // Define Goal for Delirium Assessment per CAM-ICU
 * goal[assessmentScale][+]
@@ -283,7 +283,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
     * measure = $divi-qi-s#CAM-ICU "CAM-ICU"
     * detailRange
       * low = 0 '' ""
-      * high = 0 '' ""// todo: check if this is correct
+      * high = 0 '' "" // todo: check if this is correct
 
 // Define Goal for Delirium Assessment per ICDSC
 * goal[assessmentScale][+]
