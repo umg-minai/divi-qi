@@ -67,3 +67,4 @@ Alias: $cs-codex-celida = https://www.netzwerk-universitaetsmedizin.de/fhir/code
 Alias: $cs-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
 
 Alias: $cs-fhir-types = http://hl7.org/fhir/fhir-types
+Alias: $cs-fhir-event-timing = http://hl7.org/fhir/event-timing
