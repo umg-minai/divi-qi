@@ -16,7 +16,7 @@ instanceOptions:
 
 dependencies:
   de.netzwerk-universitaetsmedizin.ebm-cpg:
-    version: 1.0.0
+    version: 1.0.2
 
 pages:
   index.md:

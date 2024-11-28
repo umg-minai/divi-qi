@@ -34,11 +34,14 @@ Description: "An initial structured communication with the Patients and/or their
 * status = #active
 * code = $sct#225330006 "Client Participation"
 * kind = $cs-fhir-types#Task "Task"
-* extension[relativeTime]
-  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-  * extension[offset].valueRange
-    * low = 0 'h' "hours"
-    * high = 72 'h' "hours"
+* timingTiming
+  * repeat
+    * count = 1
+  * extension[relativeTime]
+    * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+    * extension[offset].valueRange
+      * low = 0 'h' "hours"
+      * high = 72 'h' "hours"
 
 
 Instance: PeriodicCommunicationPatientsRelatives

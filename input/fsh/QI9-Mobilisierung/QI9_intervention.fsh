@@ -34,11 +34,14 @@ Description: "First Mobilization occurs within 24 hours after Admission to Inten
 * status = #active
 * code = $sct#74923002 "Mobilization"
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
-* extension[relativeTime]
-  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-  * extension[offset].valueRange
-    * low = 0 'h' "hours"
-    * high = 24 'h' "hours"
+* timingTiming
+  * repeat
+    * count = 1
+  * extension[relativeTime]
+    * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+    * extension[offset].valueRange
+      * low = 0 'h' "hours"
+      * high = 24 'h' "hours"
 
 
 

@@ -34,11 +34,14 @@ Description: "First Enteral Feeding occurs within 24 hours after Admission to In
 * status = #active
 * code = $sct#229912004 "Enteral Feeding"
 * kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
-* extension[relativeTime]
-  * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
-  * extension[offset].valueRange
-    * low = 0 'h' "hours"
-    * high = 24 'h' "hours"
+* timingTiming
+  * repeat
+    * count = 1
+  * extension[relativeTime]
+    * extension[contextCode].valueCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
+    * extension[offset].valueRange
+      * low = 0 'h' "hours"
+      * high = 24 'h' "hours"
 
 
 
@@ -77,6 +80,7 @@ Description: "The daily amount of calories matches the individual requirements."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount" // TODO: "is sufficient" is missing
+* kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
 // TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition? "wenn der wert des einen codes den wert des anderen codes erreicht hat"?
 * timingTiming
   * repeat
