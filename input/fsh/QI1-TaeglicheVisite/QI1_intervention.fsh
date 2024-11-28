@@ -17,7 +17,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 
 // Define Intervention 
 * insert rs-combination-all
-* action[other][+] // TODO: Check all slice names
+* action[other][+]
   * definitionCanonical = Canonical(DailyMultiprofessionalWardRoundsAction)
   * code = $sct#74964007 "Other (qualifier value)"
 
@@ -33,7 +33,6 @@ Description: "Every Intensive Care Patient is visited daily in multiprofessional
 * status = #active
 * code = $divi-qi-s#VISITE-FA-ZB-ITS "Multidisciplinary ward round led by an intensive care specialist"
 * kind = $cs-fhir-types#Task "Task"
-//* code = $sct#1236923003 "Participation in multidisciplinary ward round"
 * timingTiming
   * repeat
     * frequency = 1

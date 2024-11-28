@@ -87,7 +87,7 @@ Description: "The fraction of patients discharged with dependence on home ventil
   * code = $sct#74964007 "Other (qualifier value)"
 
 // Recommended Action
-Instance: NoDischargeWithHomeVentilation // TODO: doNotPerform flag
+Instance: NoDischargeWithHomeVentilation
 InstanceOf: RecommendationAction
 Usage: #definition
 Title: "No Discharge with Home Ventilation"
@@ -103,3 +103,4 @@ Description: "The patient is not discharged with home ventilation."
     * frequency = 1
     * period = 1
     * periodUnit = $ucum#d "day"
+* doNotPerform = true
