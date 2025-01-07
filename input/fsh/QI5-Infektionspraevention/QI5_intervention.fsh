@@ -1,5 +1,3 @@
-// TODO: is the basis here (for population) the patient or the device?
-
 Instance: StopOdersInvasiveDevices
 InstanceOf: recommendation-plan 
 Usage: #definition
@@ -21,6 +19,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 * insert rs-combination-all
 * action[other][+] 
   * definitionCanonical = Canonical(DailyStopOrdersInvasiveDevices)
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
   * code = $sct#74964007 "Other (qualifier value)"
 
 
@@ -65,6 +64,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-hand-disinfectant-consumption"
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
 
 // Define Goal for the Hand-Disinfectant Consumption
 * goal[other][+]
@@ -99,6 +99,7 @@ Description: "The number of infections per invasive devices is at zero."
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-infection-device-ratio"
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
 
 // Define Goal for the Infection-per-Device Ratio
 * goal[other][+]
@@ -106,7 +107,7 @@ Description: "The number of infections per invasive devices is at zero."
   * id = "assessment-infection-device-ratio"
   * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
-    * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection" // TOOD: aus vorverarbeitung eine variable definieren die sagt : "% infektionen pro device"
+    * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection" // TODO: aus vorverarbeitung eine variable definieren die sagt : "% infektionen pro device"
     * detailRange.low = 0 '' ""
     * due = 1 $ucum#d "day"
 
@@ -133,6 +134,7 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-pneumonia-ventilated-patients-ratio"
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
 
 // Define Goal for the Pneumonia-Ventilated-Patients-Ratio
 * goal[other][+]
@@ -143,5 +145,3 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
     * measure = $sct#429271009 "Ventilator associated pneumonia"
     * detailRange.low = 0 '' ""
     * due = 1 $ucum#d "day"
-
-
