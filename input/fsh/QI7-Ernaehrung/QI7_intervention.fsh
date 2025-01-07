@@ -64,9 +64,18 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 
 // Define Intervention 
 * insert rs-combination-all
+
+* goal[other][+]
+  * id = "sufficient-feeding"
+  * description.text = "The daily calorie intake is sufficient"
+  * target
+    * measure = $sct#787787004 "Energy intake (observable entity)"
+    * detailCodeableConcept = $sct#1003837001 "Estimated required quantity of energy in 24 hours (observable entity)"
+
 * action[other][+] 
   * definitionCanonical = Canonical(DailySufficientFeeding)
   * code = $sct#74964007 "Other (qualifier value)"
+  * goalId[+] = "sufficient-feeding"
 
 
 // Recommended Action
@@ -79,9 +88,8 @@ Description: "The daily amount of calories matches the individual requirements."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-sufficient-feeding)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#787787004 "Calorie Intake" // + $sct#769397007 "Sufficient Amount" // TODO: "is sufficient" is missing
+* code = $sct-int#386372009 "Nutrition management (procedure)"
 * kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
-// TODO: es gibt ein kalorienziel -> kann man das als variable verwenden? zb input in PlanDefinition? "wenn der wert des einen codes den wert des anderen codes erreicht hat"?
 * timingTiming
   * repeat
     * frequency = 1
