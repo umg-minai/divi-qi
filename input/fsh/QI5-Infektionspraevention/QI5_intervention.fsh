@@ -64,7 +64,6 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-hand-disinfectant-consumption"
-  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
 
 // Define Goal for the Hand-Disinfectant Consumption
 * goal[other][+]
@@ -107,10 +106,8 @@ Description: "The number of infections per invasive devices is at zero."
   * id = "assessment-infection-device-ratio"
   * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
-    * measure = $sct#736152001 "CLABSI - central line associated bloodstream infection" // TODO: aus vorverarbeitung eine variable definieren die sagt : "% infektionen pro device"
+    * measure = $cs-divi-qi-s#COUNT-CLABSI "Number of central line associated bloodstream infections"
     * detailRange.low = 0 '' ""
-    * due = 1 $ucum#d "day"
-
 
 Instance: PenumoniaVentilatedPatientRatio
 InstanceOf: recommendation-plan 
@@ -134,7 +131,6 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-pneumonia-ventilated-patients-ratio"
-  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
 
 // Define Goal for the Pneumonia-Ventilated-Patients-Ratio
 * goal[other][+]
@@ -142,6 +138,5 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * id = "assessment-pneumonia-ventilated-patients-ratio"
   * description.text = "The number of pneumonia cases per ventilated patients is at zero."
   * target[+]
-    * measure = $sct#429271009 "Ventilator associated pneumonia"
+    * measure = $cs-divi-qi-s#COUNT-VENT-PNEUMONIA "Number of ventilator-associated pneumonia"
     * detailRange.low = 0 '' ""
-    * due = 1 $ucum#d "day"

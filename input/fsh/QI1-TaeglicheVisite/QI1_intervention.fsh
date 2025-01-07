@@ -31,7 +31,7 @@ Description: "Every Intensive Care Patient is visited daily in multiprofessional
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-ward-rounds)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $divi-qi-s#VISITE-FA-ZB-ITS "Multidisciplinary ward round led by an intensive care specialist"
+* code = $cs-divi-qi-s#VISITE-FA-ZB-ITS "Multidisciplinary ward round led by an intensive care specialist"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
@@ -74,7 +74,7 @@ Description: "Daily Treatment Goals are set at least once every day."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-treatment-goals)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $divi-qi-s#TAGESZIEL "Setting daily treatment goals"
+* code = $s-divi-qi-s#TAGESZIEL "Setting daily treatment goals"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat

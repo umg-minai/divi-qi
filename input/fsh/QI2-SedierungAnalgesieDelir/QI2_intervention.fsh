@@ -260,7 +260,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "analgesia-bps-inrange-goal"
   * description.text = "Analgesia Level should be within BPS scores of 0 to 3"
   * target[+]
-    * measure = $divi-qi-s#BPS "Behavioral Pain Scale"
+    * measure = $s-divi-qi-s#BPS "Behavioral Pain Scale"
     * detailRange
       * low.value = 0
       * high.value = 3
@@ -271,7 +271,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "delirium-camicu-inrange-goal"
   * description.text = "Delirium Status should be within CAM-ICU scores of 0 (No Delirium)"
   * target[+]
-    * measure = $divi-qi-s#CAM-ICU "CAM-ICU"
+    * measure = $s-divi-qi-s#CAM-ICU "CAM-ICU"
     * detailRange
       * low.value = 0
       * high.value = 0
@@ -282,7 +282,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
   * id = "delirium-icdsc-inrange-goal"
   * description.text = "Delirium Status should be within ICDSC scores of 0 (No Delirium)"
   * target[+]
-    * measure = $divi-qi-s#ICDSC "ICDSC"
+    * measure = $sct-intl#1351995008 "Intensive Care Delirium Screening Checklist score (observable entity)"
     * detailRange
       * low.value = 0
       * high.value = 0
