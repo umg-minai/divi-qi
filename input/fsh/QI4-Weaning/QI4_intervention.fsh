@@ -1,5 +1,3 @@
-// TODO: is the basis here (for population) the patient or the device?
-
 Instance: PeriodicAssessmentOfWeaning
 InstanceOf: recommendation-plan 
 Usage: #definition
@@ -19,10 +17,12 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 
 // Define Intervention 
 * insert rs-combination-any
-* action[other][+] 
+* action[other][+]
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
   * definitionCanonical = Canonical(DailyWeaningAssessments)
   * code = $sct#74964007 "Other (qualifier value)"
-* action[other][+] 
+* action[other][+]
+  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
   * definitionCanonical = Canonical(DailyWeaningTrials)
   * code = $sct#74964007 "Other (qualifier value)"
 
