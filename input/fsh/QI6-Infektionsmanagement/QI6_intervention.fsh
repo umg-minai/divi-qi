@@ -20,16 +20,19 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 * action[other][+] 
   * definitionCanonical = Canonical(DailyAssessmentAntibioticIndication)
   * code = $sct#74964007 "Other (qualifier value)"
+  * subjectCodeableConcept = $sct-int#281789004 "Antibiotic therapy (procedure)"
 * action[other][+] 
   * definitionCanonical = Canonical(DailyAssessmentAntibioticFocus)
   * code = $sct#74964007 "Other (qualifier value)"
+  * subjectCodeableConcept = $sct-int#281789004 "Antibiotic therapy (procedure)"
 * action[other][+] 
   * definitionCanonical = Canonical(DailyAssessmentAntibioticDuration)
   * code = $sct#74964007 "Other (qualifier value)"
+  * subjectCodeableConcept = $sct-int#281789004 "Antibiotic therapy (procedure)"
 
 
 // Recommended Action
-Instance: DailyAssessmentAntibioticIndication // TODO: _each_ abx must be checked -> make abx the population? grouping variable? oder verlagern in die vorverarbeitung (also eine variable die sagte: all antibiotices ...)?
+Instance: DailyAssessmentAntibioticIndication 
 InstanceOf: ActivityDefinition
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
