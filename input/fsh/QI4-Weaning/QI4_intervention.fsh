@@ -37,7 +37,7 @@ Description: "Readiness-to-wean from mechanical ventilation is assessed periodic
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-weaning-assessments)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $divi-qi-s#EVAL-VENT-WEAN "Assessment of Readiness-to-wean from mechanical ventilation"
+* code = $s-divi-qi-s#EVAL-VENT-WEAN "Assessment of Readiness-to-wean from mechanical ventilation"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
