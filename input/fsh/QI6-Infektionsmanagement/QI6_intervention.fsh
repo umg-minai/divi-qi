@@ -41,7 +41,7 @@ Description: "All Antibiotics are daily re-evaluated for the Indication for each
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-indication)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#230165009 "Indication of"  // TODO: find better code (self-defined?)
+* code = $cs-divi-qi-s#RE-EVAL-ANTIBIOTIC-INDICATION "Re-evaluate Indication of Antibiotic"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
@@ -58,7 +58,7 @@ Description: "All Antibiotics are daily re-evaluated for the Focus for each Anti
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-focus)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#272737002 "Site of" // TODO: find better code (self-defined?)
+* code = $cs-divi-qi-s#RE-EVAL-ANTIBIOTIC-FOCUS "Re-evaluate Focus of Antibiotic"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
@@ -75,7 +75,7 @@ Description: "All Antibiotics are daily re-evaluated for the Duration of Therapy
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-assessment-antibiotic-duration)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#261773006 "Duration of Therapy" // TODO: find better code (self-defined?)
+* code = $cs-divi-qi-s#RE-EVAL-ANTIBIOTIC-DURATION "Re-evaluate Duration of Antibiotic Therapy"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat

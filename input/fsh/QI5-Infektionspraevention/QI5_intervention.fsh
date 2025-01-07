@@ -33,7 +33,7 @@ Description: "All invasive devices have a daily re-evaluation regarding the nece
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-stop-orders-invasive-devices)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#230165009 "Indication of" // TODO: find better code (self-defined?)
+* code = $cs-divi-qi-s#RE-EVAL-DEVICE-INDICATION "Re-evaluate indication of device"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
@@ -72,8 +72,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
   * description.text = "The consumption of hand disinfectant is more than 80 litres per 1000 days."
   * target[+]
     * measure = $sct#311942001 "Disinfectant"
-    * detailRange.low = 80 $ucum#L "liter"
-    * due = 1000 $ucum#d "day" // TODO: is this reasonable? correct? can it be better?
+    * detailRange.low = 80 $ucum#L/(1000.d) "litre per 1000 days"
 
 
 Instance: InfectionDeviceRatio

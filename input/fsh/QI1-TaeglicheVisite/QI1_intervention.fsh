@@ -74,7 +74,7 @@ Description: "Daily Treatment Goals are set at least once every day."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-treatment-goals)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $s-divi-qi-s#TAGESZIEL "Setting daily treatment goals"
+* code = $cs-divi-qi-s#TAGESZIEL "Setting daily treatment goals"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
