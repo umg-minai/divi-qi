@@ -29,7 +29,7 @@ Usage: #definition
 Title: "First Communication with Patients and/or their Relatives within 72 hours"
 Description: "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."
 * name = "FirstCommunicationPatientsRelativesWithin72hours"
-* insert canonical-url(DIVI-DigiQIs, recommended-action/first-communication-patients-relatives-within-24hours)
+* insert canonical-url(DIVI-DigiQIs, recommended-action/first-communication-patients-relatives-within-72hours)
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#225330006 "Client Participation"
