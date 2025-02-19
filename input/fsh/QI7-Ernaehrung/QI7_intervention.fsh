@@ -88,7 +88,7 @@ Description: "The daily amount of calories matches the individual requirements."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/daily-sufficient-feeding)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct-int#386372009 "Nutrition management (procedure)"
+* code = $sct-int#386372009 "Nutrition management (regime/therapy)"
 * kind = $cs-fhir-types#NutritionOrder "NutritionOrder"
 * timingTiming
   * repeat
