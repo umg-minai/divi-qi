@@ -96,11 +96,11 @@ Description: "The patient is not discharged with home ventilation."
 * insert canonical-url(DIVI-DigiQIs, recommended-action/no-discharge-with-home-ventilation)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#60631000119109 "Dependence on home ventilator" //Zum Zeitpunkt: $sct#306568008 "Discharge from intensive care service"
+* code = $sct#60631000119109 "Dependence on home ventilator (finding)"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = $ucum#d "day"
+    * count = 1
+  * extension[relativeTime]
+    * extension[contextCode].valueCodeableConcept = $sct#306568008 "Discharge from intensive care service"
 * doNotPerform = true
