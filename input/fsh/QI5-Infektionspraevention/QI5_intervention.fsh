@@ -19,7 +19,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 * insert rs-combination-all
 * action[other][+] 
   * definitionCanonical = Canonical(DailyStopOrdersInvasiveDevices)
-  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
+  * subjectCodeableConcept = $sct#19923001 "Catheter, device (physical object)"
   * code = $sct#74964007 "Other (qualifier value)"
 
 
@@ -97,7 +97,7 @@ Description: "The number of infections per invasive devices is at zero."
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-infection-device-ratio"
-  * subjectCodeableConcept = $sct#706172005 "Ventilator (physical object)"
+  * subjectCodeableConcept = $sct#19923001 "Catheter, device (physical object)"
 
 // Define Goal for the Infection-per-Device Ratio
 * goal[other][+]
