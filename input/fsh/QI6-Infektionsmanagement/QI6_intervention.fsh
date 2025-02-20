@@ -33,7 +33,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 
 // Recommended Action
 Instance: DailyAssessmentAntibioticIndication 
-InstanceOf: ActivityDefinition
+InstanceOf: RecommendationAction
 Usage: #definition
 Title: "Daily Assessment of the Indication for Antibiotics"
 Description: "All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."
