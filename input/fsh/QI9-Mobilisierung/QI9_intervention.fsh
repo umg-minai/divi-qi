@@ -80,7 +80,7 @@ Description: "Mobilization that occurs at least once a day."
 * insert publisher-experimental-version(7.0)
 * status = #active
 * code = $sct#74923002 "Mobilization"
-* kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
+* kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
     * frequency = 1
