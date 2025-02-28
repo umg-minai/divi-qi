@@ -60,7 +60,9 @@ Description: "Sedation should be assessed once between 6 AM and <2 PM every day.
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: SedationAssessmentLateShift
@@ -76,7 +78,9 @@ Description: "Sedation should be assessed once between 2 AM and <10 PM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: SedationAssessmentNightShift
@@ -92,7 +96,9 @@ Description: "Sedation should be assessed once between 10 PM and <6 AM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#NIGHT "Night"
 
 Instance: PainAssessmentEarlyShift
@@ -108,7 +114,9 @@ Description: "Pain should be assessed once between 6 AM and <2 PM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: PainAssessmentLateShift
@@ -124,7 +132,9 @@ Description: "Pain should be assessed once between 2 AM and <10 PM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: PainAssessmentNightShift
@@ -140,7 +150,9 @@ Description: "Pain should be assessed once between 10 PM and <6 AM every day."
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#NIGHT "Night"
 
 Instance: DeliriumAssessmentEarlyShift
@@ -156,7 +168,9 @@ Description: "Delirium should be assessed once between 6 AM and <2 PM every day.
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#MORN "Morning"
 
 Instance: DeliriumAssessmentLateShift
@@ -172,7 +186,9 @@ Description: "Delirium should be assessed once between 2 AM and <10 PM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#AFT "Afternoon"
 
 Instance: DeliriumAssessmentNightShift
@@ -188,7 +204,9 @@ Description: "Delirium should be assessed once between 10 PM and <6 AM every day
 * kind = $cs-fhir-types#ServiceRequest "ServiceRequest"
 * timingTiming
   * repeat
-    * count = 1
+    * frequency = 1
+    * period = 1
+    * periodUnit = #d
     * when = $cs-fhir-event-timing#NIGHT "Night"
 
 
