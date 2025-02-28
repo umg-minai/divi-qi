@@ -230,14 +230,34 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
 
 // Define Intervention 
 * insert rs-combination-all
-* action[assessment][+]
-  * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "sedation-rass-inrange-goal"
-  * goalId[+] = "analgesia-nrs-inrange-goal"
-  * goalId[+] = "analgesia-vas-inrange-goal"
-  * goalId[+] = "analgesia-bps-inrange-goal"
-  * goalId[+] = "delirium-camicu-inrange-goal"
-  * goalId[+] = "delirium-icdsc-inrange-goal"
+
+* action[combination][+] // sedation
+  * insert rs-combination-any
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "sedation-rass-inrange-goal"
+
+
+* action[combination][+] // analgesia
+  * insert rs-combination-any
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "analgesia-nrs-inrange-goal"
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "analgesia-vas-inrange-goal"
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "analgesia-bps-inrange-goal"
+
+* action[combination][+] // delirium
+  * insert rs-combination-any
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "delirium-camicu-inrange-goal"
+  * action[assessment][+]
+    * code = $sct#386053000 "Evaluation procedure (procedure)"
+    * goalId[+] = "delirium-icdsc-inrange-goal"  
 
 // Define Goal for Sedation Assessment per RASS
 * goal[assessmentScale][+]
