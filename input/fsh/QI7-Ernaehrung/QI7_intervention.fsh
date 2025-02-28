@@ -65,17 +65,17 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 // Define Intervention 
 * insert rs-combination-all
 
+* action[other][+] 
+  * definitionCanonical = Canonical(DailySufficientFeeding)
+  * code = $sct#74964007 "Other (qualifier value)"
+  * goalId[+] = "sufficient-feeding"
+
 * goal[other][+]
   * id = "sufficient-feeding"
   * description.text = "The daily calorie intake is sufficient"
   * target
     * measure = $sct#787787004 "Energy intake (observable entity)"
     * detailCodeableConcept = $sct#1003837001 "Estimated required quantity of energy in 24 hours (observable entity)"
-
-* action[other][+] 
-  * definitionCanonical = Canonical(DailySufficientFeeding)
-  * code = $sct#74964007 "Other (qualifier value)"
-  * goalId[+] = "sufficient-feeding"
 
 
 // Recommended Action
