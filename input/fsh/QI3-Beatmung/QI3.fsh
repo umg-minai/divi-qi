@@ -28,7 +28,7 @@ Description: "DIVI Quality Indicator 3: Patient-adapted Ventilation"
 
 // Reference to Quality Indicator 3c
 * action[+]
-  * title = "DIVI Quality Indicator 3b: Driving Pressure Limitation"
+  * title = "DIVI Quality Indicator 3c Driving Pressure Limitation"
   * code = $cs-common-process#guideline-based-care
   * description = "Driving pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(DrivingPressureLimitation)
