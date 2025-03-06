@@ -106,7 +106,7 @@ Description: "The number of infections per invasive devices is at zero."
   * description.text = "The number of infections per invasive devices is at zero."
   * target[+]
     * measure = $cs-divi-qi-s#COUNT-CLABSI "Number of central line associated bloodstream infections"
-    * detailRange.low = 0 '' ""
+    * detailQuantity = 0 '' ""
 
 Instance: PenumoniaVentilatedPatientRatio
 InstanceOf: recommendation-plan 
@@ -138,4 +138,4 @@ Description: "The number of pneumonia cases per ventilated patients should be lo
   * description.text = "The number of pneumonia cases per ventilated patients is at zero."
   * target[+]
     * measure = $cs-divi-qi-s#COUNT-VENT-PNEUMONIA "Number of ventilator-associated pneumonia"
-    * detailRange.low = 0 '' ""
+    * detailQuantity = 0 '' ""
