@@ -296,12 +296,10 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "analgesia-bps-inrange-goal"
-  * description.text = "Analgesia Level should be within BPS scores of 0 to 3"
+  * description.text = "Analgesia Level should be BPS score of 3"
   * target[+]
     * measure = $cs-divi-qi-s#BPS "Behavioral Pain Scale"
-    * detailRange
-      * low.value = 0
-      * high.value = 3
+    * detailQuantity = 3 '' ""
 
 // Define Goal for Delirium Assessment per CAM-ICU
 * goal[assessmentScale][+]
