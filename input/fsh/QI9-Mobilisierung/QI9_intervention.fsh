@@ -12,8 +12,8 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
 // Reference Recommendation Collection
 * extension[partOf].valueCanonical = Canonical(DIVIQualityIndicator9)
 
-// Reference Population for the Intervention: All Intensive Care Patients 
-* subjectCanonical = Canonical(IntensiveCarePatients)
+// Reference Population for the Intervention: Intensive Care Patients without a no-mobilization order
+* subjectCanonical = Canonical(IntensiveCarePatients-WithOut-NoMobilizationOrder)
 
 // Define Intervention 
 * insert rs-combination-all
