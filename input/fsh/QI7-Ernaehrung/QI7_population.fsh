@@ -19,6 +19,12 @@ Description: "Intensive Care Patients with Predicted Insufficient Energy Intake"
     * valueCodeableConcept = $sct#440331000124103 "Predicted Inadequate Energy Intake"
 * characteristic[condition][=].exclude = false
 
+// Exclude Patients with a Contraindication of Enteral Feeding 
+* characteristic[+]
+  * definitionByTypeAndValue
+    * type = $sct#103306004 "Contraindication to"
+    * valueCodeableConcept = $sct#229912004 "Enteral Feeding"
+* characteristic[=].exclude = true
 
 Instance: IntensiveCarePatients-ClinicallyFed-NoAdipositas
 InstanceOf: recommendation-eligibility-criteria
@@ -49,10 +55,3 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
       * low = 0 'kg/m2' "kg/m2"
       * high = 29.999999999 'kg/m2' "kg/m2"
 * characteristic[observation][=].exclude = false
-
-// Exclude Patients with a Contraindication of Enteral Feeding 
-* characteristic[3]
-  * definitionByTypeAndValue
-    * type = $sct#103306004 "Contraindication to"
-    * valueCodeableConcept = $sct#229912004 "Enteral Feeding"
-* characteristic[3].exclude = true
