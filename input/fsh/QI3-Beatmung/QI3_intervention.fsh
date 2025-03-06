@@ -96,34 +96,34 @@ Description: "Driving Pressure should be limited to a maximum of 15 cmH2O in all
     * measure = $loinc#76154-4 "Airway pressure delta --on ventilator"
     * detailRange.high = 15 'cm[H2O]' "cm[H2O]"
 
-Instance: PEEPadjustedToFIO2-21to29
+Instance: PEEPadjustedToFIO2-00to29
 InstanceOf: recommendation-plan 
 Usage: #definition
-Title: "PEEP adjusted to FiO2=0.21-0.29"
+Title: "PEEP adjusted to FiO2=0.00-0.29"
 Description: "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
-* insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-21to29)
+* insert canonical-url(DIVI-DigiQIs, intervention/PEEP_adjustedTo_FiO2-00to29)
 * status = #active
-* name = "Intervention_PEEP_adjustedTo_FiO2_21to29"
+* name = "Intervention_PEEP_adjustedTo_FiO2_00to29"
 * date = "2024-03-29"
 * version = "1.0"
 
 // Reference Recommendation Collection
 * extension[partOf].valueCanonical = Canonical(DIVIQualityIndicator3)
 
-// Reference Population for the Intervention: Invasive Ventilated Intensive Care Patients with FiO2=0.21-0.29
-* subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29)
+// Reference Population for the Intervention: Invasive Ventilated Intensive Care Patients with FiO2=0.00-0.29
+* subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-00to29)
 
 // Define Intervention 
 * insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
-  * goalId[+] = "peep-goal-fiO2-21to29"
+  * goalId[+] = "peep-goal-fiO2-00to29"
 
 // Define Goal for Intervention 
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
-  * id = "peep-goal-fiO2-21to29"
-  * description.text = "PEEP should be set to 5 cmH2O for FiO2 0.21-0.29."
+  * id = "peep-goal-fiO2-00to29"
+  * description.text = "PEEP should be set to 5 cmH2O for FiO2 0.00-0.29."
   * target[+]
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange

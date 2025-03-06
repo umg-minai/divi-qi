@@ -35,10 +35,10 @@ Description: "DIVI Quality Indicator 3: Patient-adapted Ventilation"
 
 // References to facultative Indicator for correct PEEP-Adjustment 
 * action[+]
-  * title = "Facultative Indicator 3d-1: PEEP adjusted in Dependence of FiO2=0.21-0.29"
+  * title = "Facultative Indicator 3d-1: PEEP adjusted in Dependence of FiO2=0.00-0.29"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
-  * definitionCanonical = Canonical(PEEPadjustedToFIO2-21to29)
+  * definitionCanonical = Canonical(PEEPadjustedToFIO2-00to29)
 
 * action[+]
   * title = "Facultative Indicator 3d-2: PEEP adjusted in Dependence of FiO2=0.3-0.39"

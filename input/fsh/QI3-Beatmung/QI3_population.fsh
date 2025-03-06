@@ -35,14 +35,14 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation"
 * characteristic[observation][=].exclude = false
 
 
-Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29
+Instance: IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-00to29
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.21-0.29"
-Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.21-0.29"
-* insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-21to29)
+Title: "Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.00-0.29"
+Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.00-0.29"
+* insert canonical-url(DIVI-DigiQIs, population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-00to29)
 * status = #active
-* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_21to29"
+* name = "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_00to29"
 
 // Include Intensive Care Patients
 * characteristic[procedure][+]
@@ -71,7 +71,7 @@ Description: "Intensive Care Patients with Severe ARDS and Invasive Ventilation 
       * high = 99.999999999 'mm[Hg]' "mm[Hg]"
 * characteristic[observation][=].exclude = false
 
-// Include only Patients with FiO2=0.21-0.29
+// Include only Patients with FiO2=0.00-0.29
 * characteristic[observation][+]
   * definitionByTypeAndValue
     * type = $loinc#3150-0 "Inhaled oxygen concentration"
