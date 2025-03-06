@@ -32,7 +32,7 @@ Description: "An initial structured communication with the Patients and/or their
 * insert canonical-url(DIVI-DigiQIs, recommended-action/first-communication-patients-relatives-within-72hours)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#225330006 "Client Participation"
+* code = $sct-uk#716541000000109 "Participation (record artifact)"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
@@ -78,7 +78,7 @@ Description: "At least one structured communication with the Patients and/or the
 * insert canonical-url(DIVI-DigiQIs, recommended-action/weekly-communication-patients-relatives)
 * insert publisher-experimental-version(7.0)
 * status = #active
-* code = $sct#225330006 "Client Participation"
+* code = $sct-uk#716541000000109 "Participation (record artifact)"
 * kind = $cs-fhir-types#Task "Task"
 * timingTiming
   * repeat
