@@ -1,0 +1,585 @@
+contact:
+- name: "Universit\xE4tsmedizin Greifswald, Klinik f\xFCr An\xE4sthesie, Intensiv-,\
+    \ Notfall- und Schmerzmedizin"
+  telecom:
+  - system: url
+    value: https://www.medizin.uni-greifswald.de/intensiv/
+definition:
+  page:
+    generation: html
+    name: toc.html
+    page:
+    - generation: markdown
+      name: index.html
+      sourceUrl: index.html
+      title: "DIVI Qualit\xE4tsindikatoren Intensivmedizin"
+    - generation: html
+      name: downloads.html
+      sourceUrl: downloads.html
+      title: Downloads
+    - generation: markdown
+      name: changelog.html
+      sourceUrl: changelog.html
+      title: Change Log
+    sourceUrl: toc.html
+    title: Table of Contents
+  parameter:
+  - code:
+      code: copyrightyear
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 2023+
+  - code:
+      code: releaselabel
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: ci-build
+  - code:
+      code: active-tables
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'true'
+  - code:
+      code: apply-contact
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: apply-jurisdiction
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: apply-publisher
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: apply-version
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: show-inherited-invariants
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: usage-stats-opt-out
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'true'
+  - code:
+      code: excludexml
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: excludejsn
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'false'
+  - code:
+      code: excludettl
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'true'
+  - code:
+      code: excludemap
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'true'
+  - code:
+      code: excludeexample
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 'true'
+  - code:
+      code: extension-domain
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: https://www.netzwerk-universitaetsmedizin.de
+  - code:
+      code: extension-domain
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: https://simplifier.net
+  - code:
+      code: extension-domain
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: https://www.med.uni-greifswald.de/fhir/divi-qi
+  resource:
+  - description: Concepts required in recommendations that are not defined elsewhere
+    isExample: false
+    name: CODEX-CELIDA
+    reference:
+      reference: CodeSystem/codex-celida
+  - description: All Antibiotics are daily re-evaluated for the Duration of Therapy
+      for each Antibiotic.
+    isExample: false
+    name: Daily Assessment of the Duration of Antibiotic Therapy
+    reference:
+      reference: ActivityDefinition/DailyAssessmentAntibioticDuration
+  - description: All Antibiotics are daily re-evaluated for the Focus for each Antibiotic.
+    isExample: false
+    name: Daily Assessment of the Focus for Antibiotics
+    reference:
+      reference: ActivityDefinition/DailyAssessmentAntibioticFocus
+  - description: All Antibiotics are daily re-evaluated for the Indication for each
+      Antibiotic.
+    isExample: false
+    name: Daily Assessment of the Indication for Antibiotics
+    reference:
+      reference: ActivityDefinition/DailyAssessmentAntibioticIndication
+  - description: Readiness-to-wean from mechanical ventilation is assessed periodically
+      every day.
+    isExample: false
+    name: Daily Assessments of Readiness-to-wean from mechanical ventilation
+    reference:
+      reference: ActivityDefinition/DailyWeaningAssessments
+  - description: Treatment Goals should be documented daily for every Intensive Care
+      Patient.
+    isExample: false
+    name: Daily Documentation of Treatment Goals
+    reference:
+      reference: PlanDefinition/DailyDocumentationTreatmentGoals
+  - description: All invasive ventilated Intensive Care Patients should be evaluated
+      for their readiness-to-wean and/or receive weaning trials at least once every
+      day.
+    isExample: false
+    name: Daily Evaluation of Readiness-to-Wean and/or Weaning Trials
+    reference:
+      reference: PlanDefinition/PeriodicAssessmentOfWeaning
+  - description: Mobilization that occurs at least once a day.
+    isExample: false
+    name: Daily Mobilization
+    reference:
+      reference: ActivityDefinition/DailyMobilization
+  - description: Every Intensive Care Patient should be visited daily in multiprofessional
+      ward rounds led by an intensive care specialist.
+    isExample: false
+    name: Daily multiprofessional ward rounds
+    reference:
+      reference: PlanDefinition/DailyMultiprofessionalWardRounds
+  - description: Every Intensive Care Patient is visited daily in multiprofessional
+      ward rounds led by an intensive care specialist.
+    isExample: false
+    name: Daily multiprofessional ward rounds
+    reference:
+      reference: ActivityDefinition/DailyMultiprofessionalWardRoundsAction
+  - description: All invasive devices have a daily re-evaluation regarding the necessity
+      of each device.
+    isExample: false
+    name: Daily Stop-Orders for Invasive Devices
+    reference:
+      reference: ActivityDefinition/DailyStopOrdersInvasiveDevices
+  - description: Daily Treatment Goals are set at least once every day.
+    isExample: false
+    name: Daily Treatment Goals
+    reference:
+      reference: ActivityDefinition/DailyTreatmentGoals
+  - description: Weaning trials are performed periodically every day.
+    isExample: false
+    name: Daily Weaning Trials
+    reference:
+      reference: ActivityDefinition/DailyWeaningTrials
+  - description: Delirium should be assessed once between 6 AM and <2 PM every day.
+    isExample: false
+    name: Delirium Assessment during Early Shift
+    reference:
+      reference: ActivityDefinition/DeliriumAssessmentEarlyShift
+  - description: Delirium should be assessed once between 2 AM and <10 PM every day.
+    isExample: false
+    name: Delirium Assessment during Late Shift
+    reference:
+      reference: ActivityDefinition/DeliriumAssessmentLateShift
+  - description: Delirium should be assessed once between 10 PM and <6 AM every day.
+    isExample: false
+    name: Delirium Assessment during Night Shift
+    reference:
+      reference: ActivityDefinition/DeliriumAssessmentNightShift
+  - description: The fraction of patients discharged with dependence on home ventilation
+      should be low.
+    isExample: false
+    name: Discharge with dependence on home ventilation
+    reference:
+      reference: PlanDefinition/DischargeWithoutHomeVentilation
+  - description: 'DIVI Quality Indicator 1: Daily multiprofessional ward rounds with
+      documentation of treatment goals'
+    isExample: false
+    name: DIVI Quality Indicator 1
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator1
+  - description: 'DIVI Quality Indicator 2: Management of Sedation, Analgesia and
+      Delirium'
+    isExample: false
+    name: DIVI Quality Indicator 2
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator2
+  - description: 'DIVI Quality Indicator 3: Patient-adapted Ventilation'
+    isExample: false
+    name: DIVI Quality Indicator 3
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator3
+  - description: 'DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation'
+    isExample: false
+    name: DIVI Quality Indicator 4
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator4
+  - description: 'DIVI Quality Indicator 5: Infection Prevention'
+    isExample: false
+    name: DIVI Quality Indicator 5
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator5
+  - description: 'DIVI Quality Indicator 6: Infection Management'
+    isExample: false
+    name: DIVI Quality Indicator 6
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator6
+  - description: 'DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition'
+    isExample: false
+    name: DIVI Quality Indicator 7
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator7
+  - description: 'DIVI Quality Indicator 8: Structured Communication with Patients
+      and Relatives'
+    isExample: false
+    name: DIVI Quality Indicator 8
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator8
+  - description: 'DIVI Quality Indicator 9: Early Mobilization'
+    isExample: false
+    name: DIVI Quality Indicator 9
+    reference:
+      reference: PlanDefinition/DIVIQualityIndicator9
+  - description: "DIVI Sektion Qualit\xE4tsverbesserung und Informationstechnologie\
+      \ Qualit\xE4tsindikatoren Semantik"
+    isExample: false
+    name: "DIVI Sektion Qualit\xE4tsverbesserung und Informationstechnologie Qualit\xE4\
+      tsindikatoren Semantik"
+    reference:
+      reference: CodeSystem/divi-qi-s
+  - description: Driving Pressure should be limited to a maximum of 15 cmH2O in all
+      invasive ventilated ICU patients with severe ARDS.
+    isExample: false
+    name: Driving Pressure Limitation
+    reference:
+      reference: PlanDefinition/DrivingPressureLimitation
+  - description: All Intensive Care Patients for which a sufficient oral nutrition
+      is not expected on day one should be started on enteral feeding within 24 hours.
+    isExample: false
+    name: Early Enteral Feeding
+    reference:
+      reference: PlanDefinition/EarlyEnteralFeeding
+  - description: An initial structured communication with the Patients and/or their
+      Relatives occurs within 72 hours of Admission to Intensive Care.
+    isExample: false
+    name: First Communication with Patients and/or their Relatives within 72 hours
+    reference:
+      reference: ActivityDefinition/FirstCommunicationPatientsRelativesWithin72hours
+  - description: First Enteral Feeding occurs within 24 hours after Admission to Intensive
+      Care.
+    isExample: false
+    name: First Enteral Feeding Within 24 hours
+    reference:
+      reference: ActivityDefinition/FirstEnteralFeedingWithin24hours
+  - description: First Mobilization occurs within 24 hours after Admission to Intensive
+      Care.
+    isExample: false
+    name: First Mobilization within 24 hours
+    reference:
+      reference: ActivityDefinition/FirstMobilizationWithin24hours
+  - description: The Frequency of Blood Cultures should be at least 80 per 1000 days.
+    isExample: false
+    name: Frequency of Blood Cultures
+    reference:
+      reference: PlanDefinition/FrequencyBloodCultures
+  - description: The Frequency of Blood Cultures is at least 80 per 1000 days.
+    isExample: false
+    name: Frequent Blood Cultures
+    reference:
+      reference: ActivityDefinition/FrequentBloodCultures
+  - description: The consumption of hand disinfectant should be more than 80 litres
+      per 1000 days.
+    isExample: false
+    name: Hand Disinfectant Consumption
+    reference:
+      reference: PlanDefinition/HandDisinfectantConsumption
+  - description: All Intensive Care Patients with Antibiotics should have a daily
+      re-evaluation of the Indication, Focus and Duration of Therapy for each Antibiotic.
+    isExample: false
+    name: Indication, Focus and Duration of Therapy for Antibiotics
+    reference:
+      reference: PlanDefinition/AntibioticsIndicationFocusDuration
+  - description: The number of infections per invasive devices is at zero.
+    isExample: false
+    name: Infection-per-Device Ratio
+    reference:
+      reference: PlanDefinition/InfectionDeviceRatio
+  - description: All Intensive Care Patients should be mobilized within 24 hours after
+      admission to ICU.
+    isExample: false
+    name: Inital Mobilization
+    reference:
+      reference: PlanDefinition/InitialMobilization
+  - description: For all Intensive Care Patients, an initial structured communication
+      with the Patients and/or their Relatives should take place within 72 hours of
+      Admission to Intensive Care.
+    isExample: false
+    name: Inital Structured Communication with Patients and/or Relatives
+    reference:
+      reference: PlanDefinition/InitialCommunicationPatientsRelatives
+  - description: The patient is not discharged with home ventilation.
+    isExample: false
+    name: No Discharge with Home Ventilation
+    reference:
+      reference: ActivityDefinition/NoDischargeWithHomeVentilation
+  - description: Pain should be assessed once between 6 AM and <2 PM every day.
+    isExample: false
+    name: Pain Assessment during Early Shift
+    reference:
+      reference: ActivityDefinition/PainAssessmentEarlyShift
+  - description: Pain should be assessed once between 2 AM and <10 PM every day.
+    isExample: false
+    name: Pain Assessment during Late Shift
+    reference:
+      reference: ActivityDefinition/PainAssessmentLateShift
+  - description: Pain should be assessed once between 10 PM and <6 AM every day.
+    isExample: false
+    name: Pain Assessment during Night Shift
+    reference:
+      reference: ActivityDefinition/PainAssessmentNightShift
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.00-0.29
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-00to29
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.30-0.39
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-30to39
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.40-0.49
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-40to49
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.50-0.59
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-50to59
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.60-0.79
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-60to79
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=0.80-0.99
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-80to99
+  - description: PEEP should be adjusted according to the table on ardsnet.org in
+      dependence of the FiO2 required to achieve adequate oxygenation in all ventilated
+      ICU patients with severe ARDS.
+    isExample: false
+    name: PEEP adjusted to FiO2=1.00
+    reference:
+      reference: PlanDefinition/PEEPadjustedToFIO2-100
+  - description: Sedation Level, Analgesia Level and Delirium Status should be assessed
+      at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive
+      Care Patients.
+    isExample: false
+    name: Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status
+    reference:
+      reference: PlanDefinition/PeriodicAssessmentOfSedationAnalgesiaDelirium
+  - description: All Intensive Care Patients that don't have a no-mobilization order
+      should be mobilized at least once every day.
+    isExample: false
+    name: Periodic Mobilization
+    reference:
+      reference: PlanDefinition/PeriodicMobilization
+  - description: For all Intensive Care Patients, at least one structured communication
+      with the Patients and/or their Relatives should take place every week.
+    isExample: false
+    name: Periodic Structured Communication with Patients and/or Relatives
+    reference:
+      reference: PlanDefinition/PeriodicCommunicationPatientsRelatives
+  - description: Plateau Pressure should be limited to a maximum of 30 cmH2O in all
+      invasive ventilated ICU patients with severe ARDS.
+    isExample: false
+    name: Plateau Pressure Limitation
+    reference:
+      reference: PlanDefinition/PlateauPressureLimitation
+  - description: The number of pneumonia cases per ventilated patients should be low.
+    isExample: false
+    name: Pneumonia-per-Ventilated-Patients Ratio
+    reference:
+      reference: PlanDefinition/PenumoniaVentilatedPatientRatio
+  - description: Intensive Care Patients
+    isExample: false
+    name: 'Population: Intensive Care Patients'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients
+  - description: Intensive Care Patients that are clinically fed and have no Adipositas
+    isExample: false
+    name: 'Population: Intensive Care Patients that are clinically fed and have no
+      Adipositas'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-ClinicallyFed-NoAdipositas
+  - description: Intensive Care Patients with at least one antibiotic
+    isExample: false
+    name: 'Population: Intensive Care Patients with at least one antibiotic'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-Antibiotic
+  - description: Intensive Care Patients with at least one invasive device
+    isExample: false
+    name: 'Population: Intensive Care Patients with at least one invasive device'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-InvasiveDevice
+  - description: Intensive Care Patients with Intensive Care Treatment Longer Than
+      Three Days
+    isExample: false
+    name: 'Population: Intensive Care Patients with Intensive Care Treatment Longer
+      Than Three Days'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-IntensiveCareLongerThanThreeDays
+  - description: Intensive Care Patients with Invasive Ventilation
+    isExample: false
+    name: 'Population: Intensive Care Patients with Invasive Ventilation'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-InvasiveVentilation
+  - description: Intensive Care Patients with Invasive Ventilation and no Home Ventilation
+    isExample: false
+    name: 'Population: Intensive Care Patients with Invasive Ventilation and no Home
+      Ventilation'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation
+  - description: Intensive Care Patients with Predicted Insufficient Energy Intake
+    isExample: false
+    name: 'Population: Intensive Care Patients with Predicted Insufficient Energy
+      Intake'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-PredictedInsufficientEnergyIntake
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.00-0.29
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.00-0.29'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-00to29
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.30-0.39
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.30-0.39'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.40-0.49
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.40-0.49'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.50-0.59
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.50-0.59'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.60-0.79
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.60-0.79'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.80-0.99
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=0.80-0.99'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99
+  - description: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=1.00
+    isExample: false
+    name: 'Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation
+      with FiO2=1.00'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100
+  - description: Intensive Care Patients without a no-mobilization order
+    isExample: false
+    name: 'Population: Intensive Care Patients without a no-mobilization order'
+    reference:
+      reference: EvidenceVariable/IntensiveCarePatients-WithOut-NoMobilizationOrder
+  - description: Sedation should be assessed once between 6 AM and <2 PM every day.
+    isExample: false
+    name: Sedation Assessment during Early Shift
+    reference:
+      reference: ActivityDefinition/SedationAssessmentEarlyShift
+  - description: Sedation should be assessed once between 2 AM and <10 PM every day.
+    isExample: false
+    name: Sedation Assessment during Late Shift
+    reference:
+      reference: ActivityDefinition/SedationAssessmentLateShift
+  - description: Sedation should be assessed once between 10 PM and <6 AM every day.
+    isExample: false
+    name: Sedation Assessment during Night Shift
+    reference:
+      reference: ActivityDefinition/SedationAssessmentNightShift
+  - description: Sedation Level, Analgesia Level and Delirium Status should be in
+      acceptable ranges.
+    isExample: false
+    name: Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.
+    reference:
+      reference: PlanDefinition/SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges
+  - description: All Intensive Care Patients with invasive devices should have a daily
+      re-evaluation regarding the necessity of each device.
+    isExample: false
+    name: Stop Orders for Invasive Devices
+    reference:
+      reference: PlanDefinition/StopOdersInvasiveDevices
+  - description: Every day, all Non-Adipose Intensive Care Patients should receive
+      the amount of Calories that match their daily individual requirements.
+    isExample: false
+    name: Sufficient Feeding in Non-Adipose Patients
+    reference:
+      reference: PlanDefinition/SufficientFeeding
+  - description: The daily amount of calories matches the individual requirements.
+    isExample: false
+    name: The daily calorie intake is sufficient
+    reference:
+      reference: ActivityDefinition/DailySufficientFeeding
+  - description: Tidal volume should be limited to a maximum of 6 ml/kg ideal body
+      weight in all invasive ventilated ICU patients with severe ARDS.
+    isExample: false
+    name: Tidal Volume Limitation
+    reference:
+      reference: PlanDefinition/TidalVolumeLimitation
+  - description: At least one structured communication with the Patients and/or their
+      Relatives takes place every week.
+    isExample: false
+    name: Weekly Communication with Patients and Relatives
+    reference:
+      reference: ActivityDefinition/WeeklyCommunicationPatientsRelatives
+dependsOn:
+- id: de_netzwerk_universitaetsmedizin_ebm_cpg
+  packageId: de.netzwerk-universitaetsmedizin.ebm-cpg
+  uri: https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg
+  version: 1.2.0
+fhirVersion:
+- 5.0.0
+id: divi-qi.fhir.med.uni-greifswald.de
+name: DIVIQIFHIR
+packageId: divi-qi.fhir.med.uni-greifswald.de
+publisher: "Universit\xE4tsmedizin Greifswald, Klinik f\xFCr An\xE4sthesie, Intensiv-,\
+  \ Notfall- und Schmerzmedizin"
+resourceType: ImplementationGuide
+status: active
+title: "DIVI Qualit\xE4tsindikatoren Intensivmedizin"
+url: https://www.med.uni-greifswald.de/fhir/divi-qi/ImplementationGuide/divi-qi.fhir.med.uni-greifswald.de
+version: 0.0.1-snapshot
