@@ -27,7 +27,7 @@ Description: "Tidal volume should be limited to a maximum of 6 ml/kg ideal body 
   * id = "tidal-volume-goal"
   * description.text = "Tidal volume should be limited to a maximum of 6 ml/kg ideal body weight."
   * target[+]
-    * measure = $cs-codex-celida#tvpibw "Tidal volume / ideal body weight (ARDSnet)"
+    * measure = $cs-divi-qi-s#tvpibw "Tidal volume / ideal body weight (ARDSnet)"
     * detailRange.high = 6 'ml/kg' "ml/kg"
 
 

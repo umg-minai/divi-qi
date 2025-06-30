@@ -18,3 +18,4 @@ Description: "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qu
 * #RE-EVAL-ANTIBIOTIC-INDICATION "Re-evaluate Indication of Antibiotic"
 * #RE-EVAL-ANTIBIOTIC-FOCUS "Re-evaluate Focus of Antibiotic"
 * #RE-EVAL-ANTIBIOTIC-DURATION "Re-evaluate Duration of Antibiotic Therapy"
+* #tvpibw "Tidal volume / ideal body weight (ARDSnet)" "Tidal volume per ideal body weight calculated using gender-adapted formulae as published by ARDSnet (DOI: 10.1056/NEJM20000504342180)"
