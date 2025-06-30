@@ -20,9 +20,6 @@ Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 
-
-Alias: $ceosys = https://www.ceosys.de
-
 Alias: $cs-focus-characteristic = http://terminology.hl7.org/CodeSystem/focus-characteristic-code
 Alias: $vs-focus-characteristic = http://hl7.org/fhir/ValueSet/focus-characteristic-code
 Alias: $cs-variable-role = http://terminology.hl7.org/CodeSystem/variable-role
@@ -56,14 +53,12 @@ Alias: $cs-clinical-importance = cs-clinical-importance
 Alias: $cs-cited-artifact-classification-type = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type
 Alias: $cs-cited-artifact-status-type = http://terminology.hl7.org/CodeSystem/cited-artifact-status-type
 Alias: $cs-related-artifact-type = http://hl7.org/fhir/related-artifact-type
-Alias: $cs-ceosys = CEOsysCodeSystem
 
 Alias: $cs-citation-artifact-classifier = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier
 
 Alias: $vs-snomed-procedures = http://hl7.org/fhir/ValueSet/procedure-code
 Alias: $cs-gts-timing = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 
-Alias: $cs-codex-celida = https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida
 Alias: $cs-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
 
 Alias: $cs-fhir-types = http://hl7.org/fhir/fhir-types
