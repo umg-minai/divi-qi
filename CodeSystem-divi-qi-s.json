@@ -1,0 +1,73 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "divi-qi-s",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem divi-qi-s</b></p><a name=\"divi-qi-s\"> </a><a name=\"hcdivi-qi-s\"> </a><p>This  code system <code>http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VISITE-FA-ZB-ITS<a name=\"divi-qi-s-VISITE-FA-ZB-ITS\"> </a></td><td>Multidisciplinary ward round led by an intensive care specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">TAGESZIEL<a name=\"divi-qi-s-TAGESZIEL\"> </a></td><td>Setting daily treatment goals</td><td/></tr><tr><td style=\"white-space:nowrap\">BPS<a name=\"divi-qi-s-BPS\"> </a></td><td>Behavioral Pain Scale</td><td/></tr><tr><td style=\"white-space:nowrap\">CAM-ICU<a name=\"divi-qi-s-CAM-ICU\"> </a></td><td>CAM-ICU</td><td/></tr><tr><td style=\"white-space:nowrap\">EVAL-VENT-WEAN<a name=\"divi-qi-s-EVAL-VENT-WEAN\"> </a></td><td>Assessment of Readiness-to-wean from mechanical ventilation</td><td/></tr><tr><td style=\"white-space:nowrap\">ORDER-NO-MOBIL<a name=\"divi-qi-s-ORDER-NO-MOBIL\"> </a></td><td>Order to not mobilize</td><td/></tr><tr><td style=\"white-space:nowrap\">ICDSC<a name=\"divi-qi-s-ICDSC\"> </a></td><td>Intensive Care Delirium Screening Checklist (ICDSC) score</td><td/></tr><tr><td style=\"white-space:nowrap\">COUNT-CLABSI<a name=\"divi-qi-s-COUNT-CLABSI\"> </a></td><td>Number of central line associated bloodstream infections</td><td/></tr><tr><td style=\"white-space:nowrap\">COUNT-VENT-PNEUMONIA<a name=\"divi-qi-s-COUNT-VENT-PNEUMONIA\"> </a></td><td>Number of ventilator-associated pneumonia</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-DEVICE-INDICATION<a name=\"divi-qi-s-RE-EVAL-DEVICE-INDICATION\"> </a></td><td>Re-evaluate indication of device</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-INDICATION<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-INDICATION\"> </a></td><td>Re-evaluate Indication of Antibiotic</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-FOCUS<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-FOCUS\"> </a></td><td>Re-evaluate Focus of Antibiotic</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-DURATION<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-DURATION\"> </a></td><td>Re-evaluate Duration of Antibiotic Therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">tvpibw<a name=\"divi-qi-s-tvpibw\"> </a></td><td>Tidal volume / ideal body weight (ARDSnet)</td><td>Tidal volume per ideal body weight calculated using gender-adapted formulae as published by ARDSnet (DOI: 10.1056/NEJM20000504342180)</td></tr></table></div>"
+  },
+  "url" : "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik",
+  "name" : "DIVI_QI_S",
+  "title" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik",
+  "status" : "active",
+  "date" : "2025-06-30T18:30:38+00:00",
+  "description" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik",
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "VISITE-FA-ZB-ITS",
+    "display" : "Multidisciplinary ward round led by an intensive care specialist"
+  },
+  {
+    "code" : "TAGESZIEL",
+    "display" : "Setting daily treatment goals"
+  },
+  {
+    "code" : "BPS",
+    "display" : "Behavioral Pain Scale"
+  },
+  {
+    "code" : "CAM-ICU",
+    "display" : "CAM-ICU"
+  },
+  {
+    "code" : "EVAL-VENT-WEAN",
+    "display" : "Assessment of Readiness-to-wean from mechanical ventilation"
+  },
+  {
+    "code" : "ORDER-NO-MOBIL",
+    "display" : "Order to not mobilize"
+  },
+  {
+    "code" : "ICDSC",
+    "display" : "Intensive Care Delirium Screening Checklist (ICDSC) score"
+  },
+  {
+    "code" : "COUNT-CLABSI",
+    "display" : "Number of central line associated bloodstream infections"
+  },
+  {
+    "code" : "COUNT-VENT-PNEUMONIA",
+    "display" : "Number of ventilator-associated pneumonia"
+  },
+  {
+    "code" : "RE-EVAL-DEVICE-INDICATION",
+    "display" : "Re-evaluate indication of device"
+  },
+  {
+    "code" : "RE-EVAL-ANTIBIOTIC-INDICATION",
+    "display" : "Re-evaluate Indication of Antibiotic"
+  },
+  {
+    "code" : "RE-EVAL-ANTIBIOTIC-FOCUS",
+    "display" : "Re-evaluate Focus of Antibiotic"
+  },
+  {
+    "code" : "RE-EVAL-ANTIBIOTIC-DURATION",
+    "display" : "Re-evaluate Duration of Antibiotic Therapy"
+  },
+  {
+    "code" : "tvpibw",
+    "display" : "Tidal volume / ideal body weight (ARDSnet)",
+    "definition" : "Tidal volume per ideal body weight calculated using gender-adapted formulae as published by ARDSnet (DOI: 10.1056/NEJM20000504342180)"
+  }]
+}

@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.med.uni-greifswald.de/fhir/divi-qi/ActivityDefinition/NoDischargeWithHomeVentilation> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NoDischargeWithHomeVentilation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition NoDischargeWithHomeVentilation</b></p><a name=\"NoDischargeWithHomeVentilation\"> </a><a name=\"hcNoDischargeWithHomeVentilation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition-recommendation-action.html\">Recommendation Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-NoDischargeWithHomeVentilation.html\">ActivityDefinition No Discharge with Home Ventilation</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: NoDischargeWithHomeVentilation</p><p><b>title</b>: No Discharge with Home Ventilation</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-06-30 18:30:38+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>The patient is not discharged with home ventilation.</p>\n</div><p><b>kind</b>: Task</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 60631000119109}\">Dependence on home ventilator (finding)</span></p><p><b>doNotPerform</b>: true</p><p><b>timing</b>: Count 1  times, Once</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "computable"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "structured"
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/no-discharge-with-home-ventilation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "NoDischargeWithHomeVentilation"] ; # 
+  fhir:title [ fhir:v "No Discharge with Home Ventilation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:30:38+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "The patient is not discharged with home ventilation."] ; # 
+  fhir:kind [ fhir:v "Task"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:60631000119109 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60631000119109" ] ;
+       fhir:display [ fhir:v "Dependence on home ventilator (finding)" ]
+     ] )
+  ] ; # 
+  fhir:doNotPerform [ fhir:v true] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "contextCode"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             a sct:306568008 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "306568008" ] ;
+             fhir:display [ fhir:v "Discharge from intensive care service" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time"^^xsd:anyURI ]
+     ] ) ;
+     fhir:repeat [
+       fhir:count [ fhir:v "1"^^xsd:positiveInteger ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

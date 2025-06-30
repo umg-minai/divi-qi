@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik",
+      "version" : null,
+      "status" : "active",
+      "name" : "DIVI_QI_S",
+      "title" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik",
+      "description" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"
+    }
+  ]
+}

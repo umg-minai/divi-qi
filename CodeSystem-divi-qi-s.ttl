@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.med.uni-greifswald.de/fhir/divi-qi/CodeSystem/divi-qi-s> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "divi-qi-s"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem divi-qi-s</b></p><a name=\"divi-qi-s\"> </a><a name=\"hcdivi-qi-s\"> </a><p>This  code system <code>http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">VISITE-FA-ZB-ITS<a name=\"divi-qi-s-VISITE-FA-ZB-ITS\"> </a></td><td>Multidisciplinary ward round led by an intensive care specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">TAGESZIEL<a name=\"divi-qi-s-TAGESZIEL\"> </a></td><td>Setting daily treatment goals</td><td/></tr><tr><td style=\"white-space:nowrap\">BPS<a name=\"divi-qi-s-BPS\"> </a></td><td>Behavioral Pain Scale</td><td/></tr><tr><td style=\"white-space:nowrap\">CAM-ICU<a name=\"divi-qi-s-CAM-ICU\"> </a></td><td>CAM-ICU</td><td/></tr><tr><td style=\"white-space:nowrap\">EVAL-VENT-WEAN<a name=\"divi-qi-s-EVAL-VENT-WEAN\"> </a></td><td>Assessment of Readiness-to-wean from mechanical ventilation</td><td/></tr><tr><td style=\"white-space:nowrap\">ORDER-NO-MOBIL<a name=\"divi-qi-s-ORDER-NO-MOBIL\"> </a></td><td>Order to not mobilize</td><td/></tr><tr><td style=\"white-space:nowrap\">ICDSC<a name=\"divi-qi-s-ICDSC\"> </a></td><td>Intensive Care Delirium Screening Checklist (ICDSC) score</td><td/></tr><tr><td style=\"white-space:nowrap\">COUNT-CLABSI<a name=\"divi-qi-s-COUNT-CLABSI\"> </a></td><td>Number of central line associated bloodstream infections</td><td/></tr><tr><td style=\"white-space:nowrap\">COUNT-VENT-PNEUMONIA<a name=\"divi-qi-s-COUNT-VENT-PNEUMONIA\"> </a></td><td>Number of ventilator-associated pneumonia</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-DEVICE-INDICATION<a name=\"divi-qi-s-RE-EVAL-DEVICE-INDICATION\"> </a></td><td>Re-evaluate indication of device</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-INDICATION<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-INDICATION\"> </a></td><td>Re-evaluate Indication of Antibiotic</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-FOCUS<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-FOCUS\"> </a></td><td>Re-evaluate Focus of Antibiotic</td><td/></tr><tr><td style=\"white-space:nowrap\">RE-EVAL-ANTIBIOTIC-DURATION<a name=\"divi-qi-s-RE-EVAL-ANTIBIOTIC-DURATION\"> </a></td><td>Re-evaluate Duration of Antibiotic Therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">tvpibw<a name=\"divi-qi-s-tvpibw\"> </a></td><td>Tidal volume / ideal body weight (ARDSnet)</td><td>Tidal volume per ideal body weight calculated using gender-adapted formulae as published by ARDSnet (DOI: 10.1056/NEJM20000504342180)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "DIVI_QI_S"] ; # 
+  fhir:title [ fhir:v "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:30:38+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "VISITE-FA-ZB-ITS" ] ;
+     fhir:display [ fhir:v "Multidisciplinary ward round led by an intensive care specialist" ]
+  ] [
+     fhir:code [ fhir:v "TAGESZIEL" ] ;
+     fhir:display [ fhir:v "Setting daily treatment goals" ]
+  ] [
+     fhir:code [ fhir:v "BPS" ] ;
+     fhir:display [ fhir:v "Behavioral Pain Scale" ]
+  ] [
+     fhir:code [ fhir:v "CAM-ICU" ] ;
+     fhir:display [ fhir:v "CAM-ICU" ]
+  ] [
+     fhir:code [ fhir:v "EVAL-VENT-WEAN" ] ;
+     fhir:display [ fhir:v "Assessment of Readiness-to-wean from mechanical ventilation" ]
+  ] [
+     fhir:code [ fhir:v "ORDER-NO-MOBIL" ] ;
+     fhir:display [ fhir:v "Order to not mobilize" ]
+  ] [
+     fhir:code [ fhir:v "ICDSC" ] ;
+     fhir:display [ fhir:v "Intensive Care Delirium Screening Checklist (ICDSC) score" ]
+  ] [
+     fhir:code [ fhir:v "COUNT-CLABSI" ] ;
+     fhir:display [ fhir:v "Number of central line associated bloodstream infections" ]
+  ] [
+     fhir:code [ fhir:v "COUNT-VENT-PNEUMONIA" ] ;
+     fhir:display [ fhir:v "Number of ventilator-associated pneumonia" ]
+  ] [
+     fhir:code [ fhir:v "RE-EVAL-DEVICE-INDICATION" ] ;
+     fhir:display [ fhir:v "Re-evaluate indication of device" ]
+  ] [
+     fhir:code [ fhir:v "RE-EVAL-ANTIBIOTIC-INDICATION" ] ;
+     fhir:display [ fhir:v "Re-evaluate Indication of Antibiotic" ]
+  ] [
+     fhir:code [ fhir:v "RE-EVAL-ANTIBIOTIC-FOCUS" ] ;
+     fhir:display [ fhir:v "Re-evaluate Focus of Antibiotic" ]
+  ] [
+     fhir:code [ fhir:v "RE-EVAL-ANTIBIOTIC-DURATION" ] ;
+     fhir:display [ fhir:v "Re-evaluate Duration of Antibiotic Therapy" ]
+  ] [
+     fhir:code [ fhir:v "tvpibw" ] ;
+     fhir:display [ fhir:v "Tidal volume / ideal body weight (ARDSnet)" ] ;
+     fhir:definition [ fhir:v "Tidal volume per ideal body weight calculated using gender-adapted formulae as published by ARDSnet (DOI: 10.1056/NEJM20000504342180)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

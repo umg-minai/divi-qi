@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.med.uni-greifswald.de/fhir/divi-qi/ActivityDefinition/DailyAssessmentAntibioticDuration> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DailyAssessmentAntibioticDuration"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyAssessmentAntibioticDuration</b></p><a name=\"DailyAssessmentAntibioticDuration\"> </a><a name=\"hcDailyAssessmentAntibioticDuration\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition-recommendation-action.html\">Recommendation Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-DailyAssessmentAntibioticDuration.html\">ActivityDefinition Daily Assessment of the Duration of Antibiotic Therapy</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyAssessmentAntibioticDuration</p><p><b>title</b>: Daily Assessment of the Duration of Antibiotic Therapy</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-06-30 18:30:38+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic.</p>\n</div><p><b>kind</b>: Task</p><p><b>code</b>: <span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik RE-EVAL-ANTIBIOTIC-DURATION}\">Re-evaluate Duration of Antibiotic Therapy</span></p><p><b>timing</b>: Once per 1 day</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "computable"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "structured"
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-duration"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "DailyAssessmentAntibioticDuration"] ; # 
+  fhir:title [ fhir:v "Daily Assessment of the Duration of Antibiotic Therapy"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:30:38+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic."] ; # 
+  fhir:kind [ fhir:v "Task"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RE-EVAL-ANTIBIOTIC-DURATION" ] ;
+       fhir:display [ fhir:v "Re-evaluate Duration of Antibiotic Therapy" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

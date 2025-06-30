@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges</b></p><a name="SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges"> </a><a name="hcSedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>partOf</b>: <a href="PlanDefinition-DIVIQualityIndicator2.html">DIVI Quality Indicator 2</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="PlanDefinition-SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges.html">PlanDefinition Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_SedationLevel_AnalgesiaLevel_DeliriumStatus_InAcceptableranges</p><p><b>title</b>: Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients.html">Population: Intensive Care Patients</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges.</p>
+</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>sedation-rass-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Sedation Level should be within RASS scores of -1 to +1</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 457441000124102}">Richmond agitation-sedation scale</span></td><td>-1-1</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-nrs-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Analgesia Level should be within NRS scores of 0 to 3</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 1284852002}">Numeric Pain Rating Scale</span></td><td>0-3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-vas-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Analgesia Level should be within VAS scores of 0 to 3</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 273904000}">Visual analog pain scale</span></td><td>0-3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-bps-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Analgesia Level should be BPS score of 3</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik BPS}">Behavioral Pain Scale</span></td><td>3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>delirium-camicu-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Delirium Status should be within CAM-ICU scores of 0 (No Delirium)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik CAM-ICU}">CAM-ICU</span></td><td>0-0</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>delirium-icdsc-inrange-goal</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title="Codes:">Delirium Status should be within ICDSC scores of 0 (No Delirium)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik ICDSC}">Intensive Care Delirium Screening Checklist (ICDSC) score</span></td><td>0-0</td></tr></table></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method any}">Any</span></li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 89780004}">Combined (qualifier value)</span></p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>sedation-rass-inrange-goal</td></tr></table></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method any}">Any</span></li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 89780004}">Combined (qualifier value)</span></p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>analgesia-nrs-inrange-goal</td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>analgesia-vas-inrange-goal</td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>analgesia-bps-inrange-goal</td></tr></table></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method any}">Any</span></li></ul></blockquote><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 89780004}">Combined (qualifier value)</span></p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>delirium-camicu-inrange-goal</td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>delirium-icdsc-inrange-goal</td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/Sedation-Level_Analgesia-Level_Delirium-Status_In-Acceptable-Ranges"/>
+  <version value="1.0"/>
+  <name value="Intervention_SedationLevel_AnalgesiaLevel_DeliriumStatus_InAcceptableranges"/>
+  <title value="Sedation Level, Analgesia Level and Delirium Status in acceptable ranges."/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients"/>
+  <date value="2024-03-29"/>
+  <description value="Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges."/>
+  <goal id="sedation-rass-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Sedation Level should be within RASS scores of -1 to +1"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/731000124108/version/20230901"/>
+          <code value="457441000124102"/>
+          <display value="Richmond agitation-sedation scale"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="-1"/>
+        </low>
+        <high>
+          <value value="1"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <goal id="analgesia-nrs-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Analgesia Level should be within NRS scores of 0 to 3"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <version value="http://snomed.info/sct/900000000000207008/version/20240801"/>
+          <code value="1284852002"/>
+          <display value="Numeric Pain Rating Scale"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="0"/>
+        </low>
+        <high>
+          <value value="3"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <goal id="analgesia-vas-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Analgesia Level should be within VAS scores of 0 to 3"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="273904000"/>
+          <display value="Visual analog pain scale"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="0"/>
+        </low>
+        <high>
+          <value value="3"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <goal id="analgesia-bps-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Analgesia Level should be BPS score of 3"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+          <code value="BPS"/>
+          <display value="Behavioral Pain Scale"/>
+        </coding>
+      </measure>
+      <detailQuantity>
+        <value value="3"/>
+        <system value="http://unitsofmeasure.org"/>
+      </detailQuantity>
+    </target>
+  </goal>
+  <goal id="delirium-camicu-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Delirium Status should be within CAM-ICU scores of 0 (No Delirium)"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+          <code value="CAM-ICU"/>
+          <display value="CAM-ICU"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="0"/>
+        </low>
+        <high>
+          <value value="0"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <goal id="delirium-icdsc-inrange-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="Delirium Status should be within ICDSC scores of 0 (No Delirium)"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+          <code value="ICDSC"/>
+          <display value="Intensive Care Delirium Screening Checklist (ICDSC) score"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="0"/>
+        </low>
+        <high>
+          <value value="0"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <action>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+      <extension url="method">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+            <code value="any"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="89780004"/>
+        <display value="Combined (qualifier value)"/>
+      </coding>
+    </code>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="sedation-rass-inrange-goal"/>
+    </action>
+  </action>
+  <action>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+      <extension url="method">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+            <code value="any"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="89780004"/>
+        <display value="Combined (qualifier value)"/>
+      </coding>
+    </code>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="analgesia-nrs-inrange-goal"/>
+    </action>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="analgesia-vas-inrange-goal"/>
+    </action>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="analgesia-bps-inrange-goal"/>
+    </action>
+  </action>
+  <action>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+      <extension url="method">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+            <code value="any"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="89780004"/>
+        <display value="Combined (qualifier value)"/>
+      </coding>
+    </code>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="delirium-camicu-inrange-goal"/>
+    </action>
+    <action>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386053000"/>
+          <display value="Evaluation procedure (procedure)"/>
+        </coding>
+      </code>
+      <goalId value="delirium-icdsc-inrange-goal"/>
+    </action>
+  </action>
+</PlanDefinition>
